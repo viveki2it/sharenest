@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FE4308" stroke="#979797" stroke-width=".5" d="M37.513 1.45l25.285 14.6c1.555.897 2.513 2.556 2.513 4.352v29.196c0 1.796-.958 3.455-2.513 4.353L37.513 68.549c-1.555.898-3.47.898-5.026 0L7.202 53.951c-1.555-.898-2.513-2.557-2.513-4.353V20.402c0-1.796.958-3.455 2.513-4.353L32.487 1.451c1.555-.898 3.47-.898 5.026 0z"/>
+        <text fill="#FFF" font-family="Montserrat-Medium, Montserrat" font-size="23.8" font-weight="400">
+            <tspan x="28.5" y="44">3</tspan>
+        </text>
+    </g>
+</svg>

@@ -1,0 +1,6 @@
+<% if Rails.application.config.ended %>
+  <%= render "users/campaign_ended" %>
+<% else %>
+  <%= render "users/campaign_ongoing" %>
+<% end %>
+

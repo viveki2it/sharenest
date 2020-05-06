@@ -1,0 +1,225 @@
+  <!-- Navigation -->
+  
+
+  <header class="masthead text-center text-white">
+    <div class="page">
+      <div class="logo">
+        <img src="/assets/color-logo-transparent@2x.png" max-width="106px" />    
+      </div>
+    </div>
+    <div class="masthead-content page">
+      <div class="row">
+        <div class="col-lg-6"></div>
+        <div class="col-lg-6">
+          <div class="container">
+            <h1 class="mb-0 p-1 mt-4">The world’s first  <br> marketplace for <br> online volunteering</h1>
+            <p class="masthead-subheading mt-5 mb-5">Connecting <strong> those who can help</strong> with<br> <strong> those who need help.</strong></p>
+            
+            <%= form_for @user, :url => { :action => "create" } do |f| %>
+              <p><%= f.text_field :email, :placeholder => "Your email", class: "email" %></p>
+              <p><button class="btn-primary join" type='submit'>Join the movement</button></p>
+            <% end %>
+            <p class="mt-5"> #VolunteeringMatters</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container-fluid section-1">
+      <h1 class="section-1-title">What’s ShareNest?</h1>
+      <p class="section-1-copy">Sharenest is the world’s first marketplace for online volunteering, connecting those who can help with those who need help.</p>
+      <p class="section-1-copy-orange">Join for free now, you just have to create a profile and wait for those in need to reach out for your help.</p>
+    </div>
+  </section>
+  
+  <section>
+    <h1 class="section-general-title">Here’s how it works</h1>
+    <div class="container-fluid p-0 m-0 section-2">
+      <div class="row align-items-center section-2-container">
+        <div class="col-lg-6 p-0">
+          <img src="/assets/landing/how-it-works-1@2x.png" class="img-fluid">
+        </div>
+        <div class="col-lg-6 right-column">
+          <img src="/assets/landing/hexagonal-number.svg" alt="">
+          <h1 class="section-2-title">Create a profile</h1>
+          <p class="section-2-copy">(make sure to include your talents)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container-fluid p-0 m-0 section-2">
+      <div class="row align-items-center section-2-container">
+      <div class="col-lg-6 right-column">
+        <img src="/assets/landing/hexagonal-number-2.svg" alt="">
+        <h1 class="section-2-title">Wait for volunteer  <br> opportunities</h1>
+          <p class="section-2-copy">(Request a service) </p>
+      </div>
+      <div class="col-lg-6 p-0">
+        <img src="/assets/landing/how-it-works-2@2x.jpg" class="img-fluid">
+      </div>
+        </div>
+    </div>
+  </section>
+  <section>
+
+    <div class="container-fluid p-0 m-0 section-2">
+      <div class="row align-items-center section-2-container">
+        <div class="col-lg-6 p-0">
+          <img src="/assets/landing/how-it-works-3@2x.png" class="img-fluid">
+        </div>
+        <div class="col-lg-6 right-column">
+          <img src="/assets/landing/hexagonal-number-3.svg" alt="">
+          <h1 class="section-2-title">Accept the <br> opportunity</h1>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container-fluid section-3">
+      <div class="row align-items-center">
+        <div class="col-lg-6 content-left">
+          <h1>Volunteering…</h1>
+          
+            <div class="row">
+              <div class="col-lg-6 features"><img src="/assets/landing/icons-svg/Money.svg"  alt="">
+                <p>Improves your emotional intelligence and gives you more fulfillment</p>
+              </div>
+              <div class="col-lg-6 features"><img src="/assets/landing/icons-svg/Apple.svg"  alt="">
+                <p>Awakens a behavioral change (from taker to giver)</p>
+              </div>
+              <div class="col-lg-6 features"><img src="/assets/landing/icons-svg/Chart.svg"  alt="">
+                <p>Improves your school & college experience</p>
+              </div>
+              <div class="col-lg-6 features"><img src="/assets/landing/icons-svg/Dollar-3.svg"  alt="">
+                <p>Increases your job prospects</p>
+              </div>
+              <div class="col-lg-6 features"><img src="/assets/landing/icons-svg/Smile.svg"  alt="">
+                <p>Positively impacts your self-esteem</p>
+              </div>
+              <div class="col-lg-6 features"><img src="/assets/landing/icons-svg/mobile.svg" style="width: 30px !important;" alt="">
+                <p>Reduces screen time which helps your brain</p>
+              </div>
+              <div class="col-lg-6 features"><img src="/assets/landing/icons-svg/link2.svg"  alt="">
+                <p>Increases your community engagement</p>
+              </div>
+              <div class="col-lg-6 features"><img src="/assets/landing/icons-svg/User-2.svg"  alt="">
+                <p>Creates connections in real life with real friends</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-6 al">
+          <img src="/assets/15-macbook-pro@3x.png" class="macbookpro" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container-fluid p-0 m-0 section-4">
+      <div class="row align-items-center section-2-container">
+        <div class="col-lg-5 p-0">
+          <img src="/assets/18569-3-x@2x.png" class="img-fluid">
+        </div>
+        <div class="col-lg-6  volunteer-text">
+          <h1 class="section-title">Volunteering is simple <br> with ShareNest</h1>
+          <h2 class="section-subtitle">Our platform will be live very soon, join our movement and get access before anyone else.</h2>
+          <p class="section-copy">By joining us we will send you a unique code so you can share with other potential volunteers, you will get rewards for helping us reach more people interested in helping.</p>
+          <%= form_for @user, :url => { :action => "create" }, :class => "form-join" do |f| %>
+            <p><%= f.text_field :email, :placeholder => "Your email", class: "email" %></p>
+            <p><button class="btn-primary join" type="submit">Join our pre launch now!</button></p>
+          <% end %>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container section-5">
+      <h1 class="section-title">Invite friends to change the world <br> and earn benefits</h1>
+      <p>It’s easy as sending out a quick email with your custom link to a few friends or sharing on soacial. Each one of your referrals that comes to the site and enters their email will give you point and benefits.</p>
+    </div>
+    <div class="container content">
+      <div class="row align-items-center">
+        <div class="col-lg-3">
+          <div class="text-center component-img">
+            <img class="img-fluid" src="/assets/landing/icons-svg/hexagone-friends-5.svg" alt="">
+          </div>
+          <div>
+            <p class="subtitle mt-4">Be part of our VIP Newsletter</strong> </p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="text-center component-img">
+            <img class="img-fluid" src="/assets/landing/icons-svg/hexagone-friends-10.svg" alt="">
+          </div>
+          <div>
+            <p class="subtitle mt-4">Get 15% discount for your next purchase</p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="text-center component-img">
+            <img class="img-fluid" src="/assets/landing/icons-svg/hexagone-friends-25.svg" alt="">
+          </div>
+          <div>
+            <p class="subtitle mt-4">Participate on 60 min Live Zoom Show with Founder</p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="text-center component-img">
+            <img class="img-fluid" src="/assets/landing/icons-svg/hexagone-friends-50.svg" alt="">
+          </div>
+          <div>
+            <p class="subtitle mt-4">Participate on a 30 min Live Zoom chat with artist & Philanthropist </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+
+  <section>
+    <div class="container section-5">
+      <h1 class="section-title">Our Partners</h1>
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12">
+          <img src="/assets/landing/partners.png" alt="">
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class=" container-fluid section-join-us">
+      <h1 class="section-title mb-5 text-white">Join us now</h1> 
+      <div class="row align-items-center join-us">
+        <div class="col-lg-12">
+          <%= form_for @user, :url => { :action => "create" } do |f| %>
+            <p><%= f.text_field :email, :placeholder => "Your email", class: "email" %></p>
+            <p><button class="btn-primary join">Join our pre launch now!</button></p>
+          <% end %>
+          <p class="text-white mt-5">#VolunteeringMatters</p>
+        </div>
+    </div>
+  </div>
+  </section>  
+
+  
+
+  <!-- Footer -->
+  <footer class="py-5 bg-white">
+    <div class="container">
+      <p class="m-0 text-center">Terms of ServiceMobile  |  App Privacy Policy <br>
+        Copyrights © 2019 ShareNest LLC. All rights reserved</p>
+    </div>
+    
+    <!-- /.container -->
+  </footer>

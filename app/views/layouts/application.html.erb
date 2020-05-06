@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1, shrink-to-fit=no">  
+    <title>ShareNest &#8211; Volunteer Marketplace &#8211; ShareNest</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="alternate" hreflang="en" href="https://sharenest.com/sharenest-volunteer-marketplace/" />
+    <link rel='dns-prefetch' href='//www.google.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel="alternate" type="application/rss+xml" title="ShareNest &raquo; Feed" href="https://sharenest.com/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="ShareNest &raquo; Comments Feed" href="https://sharenest.com/comments/feed/" />
+    <link rel="shortcut icon" href="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/profile_picture_symbol.png" type="image/x-icon" />
+    <meta property="og:title" content="ShareNest - Volunteer Marketplace"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="<%= Rails.application.config.action_mailer.default_url_options[:host] %>"/>
+    <meta property="og:site_name" content="ShareNest"/>
+    <meta property="og:description" content="Introducing The
+    First Volunteer
+    Marketplace 
+
+    Connecting those who
+    want to help, with
+    those who need help  
+
+    Would you help us to
+    build this world? 
+
+    Sharing Your Services with the world Join us now 
+    Be the first to receive #VolunteeringMatters     The Sharenest Volunteering Hub Sharing Your Services with the world Start Measuring Your Social Impact"/>
+
+    <meta property="og:image" content="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/logo.png"/>    
+
+    <meta name="twitter:card" content="article">
+    <meta name="twitter:site" content="ShareNest">
+    <meta name="twitter:title" content="ShareNest - Volunteer Marketplace">
+    <meta name="twitter:description" content="Introducing The
+    First Volunteer
+    Marketplace 
+
+    Connecting those who
+    want to help, with
+    those who need help  
+
+    Would you help us to
+    build this world? 
+
+    Sharing Your Services with the world Join us now 
+    Be the first to receive #VolunteeringMatters     The Sharenest Volunteering Hub Sharing Your Services with the world Start Measuring Your Social Impact">
+    <meta name="twitter:creator" content="ShareNest">
+    <meta name="twitter:image:type" content="image/png">
+    <meta name="twitter:image" content="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/logo.png">
+    <meta name="twitter:domain" content="<%= Rails.application.config.action_mailer.default_url_options[:host] %>">
+
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body class="thankyoupage">
+    <%= yield %>
+    <%= custom_bootstrap_flash %>
+  </body>
+</html>

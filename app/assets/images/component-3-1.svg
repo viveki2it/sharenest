@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__Component_3_1" width="219" height="224" data-name="Component 3 – 1" viewBox="0 0 219 224">
+    <path id="prefix__Polygon_3" d="M157.058 0a19 19 0 0 1 16.433 9.464l44.974 77.5a19 19 0 0 1 0 19.073l-44.974 77.5A19 19 0 0 1 157.058 193H66.942a19 19 0 0 1-16.433-9.464l-44.974-77.5a19 19 0 0 1 0-19.073l44.974-77.5A19 19 0 0 1 66.942 0z" data-name="Polygon 3" transform="rotate(90 109.5 109.5)" style="fill:#f2f2f2"/>
+    <path id="prefix__Polygon_4" d="M46.013 0a10 10 0 0 1 8.632 4.952l11.4 19.5a10 10 0 0 1 0 10.1l-11.4 19.5A10 10 0 0 1 46.013 59H22.987a10 10 0 0 1-8.632-4.952l-11.4-19.5a10 10 0 0 1 0-10.1l11.4-19.5A10 10 0 0 1 22.987 0z" data-name="Polygon 4" transform="rotate(90 18.25 40.75)" style="fill:#ffe02e"/>
+    <text id="prefix___3" data-name="3" transform="translate(30 67.5)" style="fill:#222;font-size:30px;font-family:Montserrat-Bold,Montserrat;font-weight:700;letter-spacing:.018em">
+        <tspan x="-8.88" y="0">3</tspan>
+    </text>
+    <path id="prefix__Path_3" d="M46.3 43.3a9.334 9.334 0 0 1 6.6 15.9 9.417 9.417 0 0 1-13.2 0 8.978 8.978 0 0 1-2.7-6.6 14.919 14.919 0 0 1 .2-2.1l-10-6.2a8.884 8.884 0 0 1-5.9 2.1 9.22 9.22 0 0 1-9.3-9.3 9.22 9.22 0 0 1 9.3-9.3 9.073 9.073 0 0 1 5.9 2.1l10-6.2a13.611 13.611 0 0 1-.2-2.1 9.22 9.22 0 0 1 9.3-9.3 9.22 9.22 0 0 1 9.3 9.3 9.22 9.22 0 0 1-9.3 9.3 9.073 9.073 0 0 1-5.9-2.1l-10 6.2a13.611 13.611 0 0 1 .2 2.1 14.919 14.919 0 0 1-.2 2.1l10 6.2a9.073 9.073 0 0 1 5.9-2.1z" data-name="Path 3" transform="translate(88 74.7)" style="fill:#fe4308"/>
+</svg>
