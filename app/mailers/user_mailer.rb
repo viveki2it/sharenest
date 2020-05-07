@@ -3,9 +3,9 @@ class UserMailer < ActionMailer::Base
 
   def signup_email(user)
     @user = user
-    @twitter_message = "Natural, Moisturizing, and Hydrating products to leave you feeling rejuvenated and refreshed."
+    @twitter_message = "Invite your friends to ShareNest - For each friend you get exclusive experiences with unique people."
 
-    mail(:to => user.email, :subject => "Thanks for signing up!")
+    mail(:to => user.email, :subject => "Thank you for Raising your Hand!")
   end
 
   def thank_you_email(user)
