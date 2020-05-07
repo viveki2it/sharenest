@@ -137,19 +137,30 @@
       <h1 class="text-center mb-0"><strong>#volunteermatters</strong></h1>
         <h2 class="text-center">Share, Help and Win</h2>
         <div class="container">
-          <div class="share"><p class="share-code">Your code:  <strong class="ml-2">Xsqfwmi3dw</strong></p></div>
-          <div class="social-icons">
-            <img src="/assets/component-11-1.svg" alt=""> 
-            <img src="/assets/component-12-1.svg" alt=""> 
-            <img src="/assets/social-03.svg" alt=""> 
-            <img src="/assets/social-04.svg" alt="">
-          </div>
+          <div class="share"><p class="share-code">Your code:  <strong class="ml-2">?ref=<%= @user.referral_code %></strong></p></div>
+          <%= render "/users/invite_friends" %>
         </div>
+        <div class="container">
+          <%
+            words = ''
+            referrals_count = @user.referrals.count
+            if referrals_count == 1
+              words = 'friend has'
+            elsif
+              words = 'friends have'
+            end
+          %>
+          <div class="share">
+            <% if referrals_count == 0 %>
+              <p class="share-code"><strong class="ml-2">No friends have joined...Yet!</strong></p>
+            <% else %>
+              <p class="share-code"><strong class="ml-2"><%= referrals_count %> <%= words %> joined</strong></p>
+            <% end %> 
+          </div>
+        </div        
     </div>
 
   </section>
-
-  
 
   <!-- Footer -->
   <footer class="py-5 bg-white">
