@@ -322,7 +322,7 @@
 											<div align="right" class="img-container right autowidth"
 												style="padding-right: 20px;padding-left: 0px;">
 												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 20px;padding-left: 0px;" align="right"><![endif]--><a
-													href="#" tabindex="-1" target="_blank"> <img align="right"
+													href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(Rails.application.config.action_mailer.default_url_options[:host] || "") %>?ref=<%= CGI::escape(@user.referral_code) %>&title=ShareNest - Volunteer Marketplace" tabindex="-1" target="_blank"> <img align="right"
 														border="0" class="right autowidth" src="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/fb.jpg"
 														style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: none; width: 100%; max-width: 40px; float: none; display: block;"
 														width="40" /></a>
@@ -345,7 +345,7 @@
 											<div align="left" class="img-container left autowidth"
 												style="padding-right: 0px;padding-left: 20px;">
 												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 20px;" align="left"><![endif]--><a
-													href="#" tabindex="-1" target="_blank"> <img border="0"
+													href="http://twitter.com/share?url=<%= CGI::escape(Rails.application.config.action_mailer.default_url_options[:host] || "") %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(@twitter_message) %>" tabindex="-1" target="_blank"> <img border="0"
 														class="left autowidth" src="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/twitter.jpg"
 														style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: none; width: 100%; max-width: 40px; display: block;"
 														width="40" /></a>
