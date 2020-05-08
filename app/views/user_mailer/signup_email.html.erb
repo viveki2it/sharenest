@@ -35,6 +35,22 @@
 			color: inherit !important;
 			text-decoration: none !important;
 		}
+		.image_block_1{
+			display:flex;
+			justify-content: space-between;
+			padding-left: 90px;
+			padding-right: 90px;
+			margin-bottom: 30px;
+		}
+	    .subtitle {
+         text-align: center;
+         margin: 0 auto;
+         color: #707070;
+				 max-width: 141px;
+				 font-weight: bold;
+				 font-family: 'Montserrat', sans-serif; 
+				 font-size: 0.9rem;
+		}
 	</style>
 	<style id="media-query" type="text/css">
 		@media (max-width: 620px) {
@@ -115,6 +131,7 @@
 			}
 		}
 	</style>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body class="clean-body" style="margin: 0; padding: 0; -webkit-text-size-adjust: 100%; background-color: #FFFFFF;">
@@ -129,7 +146,8 @@
 					<div style="background-color:transparent;">
 						<div class="block-grid"
 							style="Margin: 0 auto; min-width: 320px; max-width: 600px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; background-color: transparent;">
-							<div style="border-collapse: collapse;display: table;width: 100%;background-color:transparent;">
+							<div
+								style="border-collapse: collapse;display: table;width: 100%;background-color:transparent;">
 								<!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px"><tr class="layout-full-width" style="background-color:transparent"><![endif]-->
 								<!--[if (mso)|(IE)]><td align="center" width="600" style="background-color:transparent;width:600px; border-top: 1px solid #e4e4e4; border-left: 1px solid #e4e4e4; border-bottom: 0px solid #e4e4e4; border-right: 1px solid #e4e4e4;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;"><![endif]-->
 								<div class="col num12"
@@ -142,9 +160,139 @@
 											<div align="center" class="img-container center autowidth"
 												style="padding-right: 0px;padding-left: 0px;">
 												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]-->
-												<div style="font-size:1px;line-height:40px"> </div><a href="#" tabindex="-1" target="_blank">
-													Sharenest</a>
 												<div style="font-size:1px;line-height:40px"> </div>
+												<p
+													style="color: #fe4308; font-family: Montserrat,sans-serif; font-weight: bolder;font-size: 1.2rem;">
+													Thank you for Raising your Hand!
+												</p>
+												<div>
+													<h1 style="font-family: 'Montserrat', sans-serif; font-size: 0.8rem; color: #222; letter-spacing: normal; text-transform: capitalize;">Invite your friends to ShareNest - For each friend you
+														get
+														exclusive experiences with unique people</h1>
+												</div>
+												<!--[if mso]></td></tr></table><![endif]-->
+											</div>
+											<div align="center" class="button-container"
+												style="padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
+												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"><tr><td style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px" align="center"><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" style="height:31.5pt; width:183pt; v-text-anchor:middle;" arcsize="10%" stroke="false" fillcolor="#4fd1a8"><w:anchorlock/><v:textbox inset="0,0,0,0"><center style="color:#ffffff; font-family:Tahoma, Verdana, sans-serif; font-size:14px"><![endif]--><a
+													href="<%= @user.user_url(root_url) %>"
+													style="-webkit-text-size-adjust: none; text-decoration: none; display: inline-block; color: #ffffff; background-color: #4fd1a8; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; width: auto; width: auto; border-top: 1px solid #4fd1a8; border-right: 1px solid #4fd1a8; border-bottom: 1px solid #4fd1a8; border-left: 1px solid #4fd1a8; padding-top: 5px; padding-bottom: 5px; font-family: 'Roboto', Tahoma, Verdana, Segoe, sans-serif; text-align: center; mso-border-alt: none; word-break: keep-all;"
+													target="_blank"><span
+														style="padding-left:20px;padding-right:20px;font-size:14px;display:inline-block;">
+														<span
+															style="font-size: 16px; line-height: 2; mso-line-height-alt: 32px;"><span
+																style="font-size: 14px; line-height: 28px;"><strong><span
+																		style="line-height: 28px; font-size: 14px;">CREATE
+																		YOUR PROFILE
+																	</span></strong></span></span>
+													</span></a>
+												<!--[if mso]></center></v:textbox></v:roundrect></td></tr></table><![endif]-->
+											</div>
+
+											<div align="center" class="img-container center autowidth fullwidth"
+												style="padding-right: 0px;padding-left: 0px;">
+												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]--><a
+													href="#" tabindex="-1" target="_blank"> <img align="center"
+														border="0" class="center autowidth fullwidth"
+														src="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/sharenest.png"
+														style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: none; width: 100%; max-width: 598px; display: block;"
+														width="598" /></a>
+												<div style="font-size:1px;line-height:40px"> </div>
+												<!--[if mso]></td></tr></table><![endif]-->
+											</div>
+											<img align="center"
+											border="0" class="center autowidth fullwidth" src="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/4.jpg"
+											style="text-decoration: none; -ms-interpolation-mode: bicubic; border: 0; height: auto; width: 100%; max-width: 598px; display: block;"
+											width="598" />
+											<div style="font-size:1px;line-height:40px"> </div>
+											<div align="center" class="img-container center autowidth fullwidth"
+												style="padding-right: 0px;padding-left: 0px;">
+												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]-->
+												<h1
+													style="font-family: 'Montserrat', sans-serif; font-size: 1.25rem; color: #fe4308; letter-spacing: normal; text-transform: uppercase;">
+													how it works</h1>
+												<!--[if mso]></td></tr></table><![endif]-->
+											</div>
+											<div align="center" class="img-container center autowidth fullwidth"
+												style="padding-right: 0px;padding-left: 0px;">
+												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]-->
+												<h1
+													style="font-family: 'Montserrat', sans-serif; font-size: 0.9rem; color: #222; letter-spacing: normal; text-transform: capitalize;">
+													Create a profile (make sure to include your talents)</h1>
+												<a href="#" tabindex="-1" target="_blank"> <img align="center"
+														border="0" class="center autowidth fullwidth"
+														src="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/landing/how-it-works-1@2x.png"
+														style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: none; width: 100%; max-width: 598px; display: block;"
+														width="598" /></a>
+												<!--[if mso]></td></tr></table><![endif]-->
+											</div>
+											<div align="center" class="img-container center autowidth fullwidth"
+												style="padding-right: 0px;padding-left: 0px;">
+												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]-->
+												<h1
+													style="font-family: 'Montserrat', sans-serif; font-size: 0.9rem; color: #222; letter-spacing: normal; text-transform: capitalize;">
+													Wait for volunteer opportunities</h1>
+												<a href="#" tabindex="-1" target="_blank"> <img align="center"
+														border="0" class="center autowidth fullwidth"
+														src="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/landing/how-it-works-2@2x.jpg"
+														style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: none; width: 100%; max-width: 598px; display: block;"
+														width="598" /></a>
+												<!--[if mso]></td></tr></table><![endif]-->
+											</div>
+											<div align="center" class="img-container center autowidth fullwidth"
+												style="padding-right: 0px;padding-left: 0px;">
+												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]-->
+												<h1
+													style="font-family: 'Montserrat', sans-serif; font-size: 0.9rem; color: #222; letter-spacing: normal; text-transform: capitalize;">
+													Accept the opportunity</h1>
+												<a href="#" tabindex="-1" target="_blank"> <img align="center"
+														border="0" class="center autowidth fullwidth"
+														src="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/landing/how-it-works-3@2x.png"
+														style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: none; width: 100%; max-width: 598px; display: block;"
+														width="598" /></a>
+												<!--[if mso]></td></tr></table><![endif]-->
+											</div>
+											<img align="center"
+											border="0" class="center autowidth fullwidth" src="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/4.jpg"
+											style="text-decoration: none; -ms-interpolation-mode: bicubic; border: 0; height: auto; width: 100%; max-width: 598px; display: block;"
+											width="598" />
+											<div style="font-size:1px;line-height:40px"> </div>
+											<div align="center" class="img-container center autowidth fullwidth"
+												style="padding-right: 0px;padding-left: 0px;">
+												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]-->
+												<h1
+													style="font-family: 'Montserrat', sans-serif; font-size: 1rem; color: #222; letter-spacing: normal; text-transform: capitalize;">
+													Win a trip by sharing</h1>
+												<h1
+													style="font-family: 'Montserrat', sans-serif; font-size: 0.7rem; color: #222; letter-spacing: normal; text-transform: capitalize;">
+													The people that shared the most will get the opportunity to win a
+													free trip for 2</h1>
+												<!--[if mso]></td></tr></table><![endif]-->
+											</div>
+											<div align="center" class="button-container"
+												style="padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
+												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"><tr><td style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px" align="center"><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" style="height:31.5pt; width:183pt; v-text-anchor:middle;" arcsize="10%" stroke="false" fillcolor="#4fd1a8"><w:anchorlock/><v:textbox inset="0,0,0,0"><center style="color:#ffffff; font-family:Tahoma, Verdana, sans-serif; font-size:14px"><![endif]--><a
+													href="<%= @user.user_url(root_url) %>"
+													style="-webkit-text-size-adjust: none; text-decoration: none; display: inline-block; color: #ffffff; background-color: #4fd1a8; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; width: auto; width: auto; border-top: 1px solid #4fd1a8; border-right: 1px solid #4fd1a8; border-bottom: 1px solid #4fd1a8; border-left: 1px solid #4fd1a8; padding-top: 5px; padding-bottom: 5px; font-family: 'Montserrat', sans-serif; text-align: center; mso-border-alt: none; word-break: keep-all;"
+													target="_blank"><span
+														style="padding-left:20px;padding-right:20px;font-size:14px;display:inline-block;">
+														<span
+															style="font-size: 16px; line-height: 2; mso-line-height-alt: 32px;"><span
+																style="font-size: 14px; line-height: 28px;"><strong><span
+																		style="line-height: 28px; font-size: 14px;">Learn
+																		More
+																	</span></strong></span></span>
+													</span></a>
+												<!--[if mso]></center></v:textbox></v:roundrect></td></tr></table><![endif]-->
+											</div>
+
+											<div align="center" class="img-container center autowidth fullwidth"
+												style="padding-right: 0px;padding-left: 0px;">
+												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]--><img
+													align="center" border="0" class="center autowidth fullwidth"
+													src="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/3.jpg"
+													style="text-decoration: none; -ms-interpolation-mode: bicubic; border: 0; height: auto; width: 100%; max-width: 598px; display: block;"
+													width="598" />
 												<!--[if mso]></td></tr></table><![endif]-->
 											</div>
 											<!--[if (!mso)&(!IE)]><!-->
@@ -160,7 +308,8 @@
 					<div style="background-color:transparent;">
 						<div class="block-grid two-up no-stack"
 							style="Margin: 0 auto; min-width: 320px; max-width: 600px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; background-color: transparent;">
-							<div style="border-collapse: collapse;display: table;width: 100%;background-color:transparent;">
+							<div
+								style="border-collapse: collapse;display: table;width: 100%;background-color:transparent;">
 								<!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px"><tr class="layout-full-width" style="background-color:transparent"><![endif]-->
 								<!--[if (mso)|(IE)]><td align="center" width="300" style="background-color:transparent;width:300px; border-top: 0px solid #e4e4e4; border-left: 1px solid #e4e4e4; border-bottom: 0px solid #e4e4e4; border-right: 0px solid #e4e4e4;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:20px; padding-bottom:5px;"><![endif]-->
 								<div class="col num6"
@@ -173,8 +322,8 @@
 											<div align="right" class="img-container right autowidth"
 												style="padding-right: 20px;padding-left: 0px;">
 												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 20px;padding-left: 0px;" align="right"><![endif]--><a
-													href="#" tabindex="-1" target="_blank"> <img align="right" border="0" class="right autowidth"
-														src="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/fb.jpg"
+													href="#" tabindex="-1" target="_blank"> <img align="right"
+														border="0" class="right autowidth" src="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/fb.jpg"
 														style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: none; width: 100%; max-width: 40px; float: none; display: block;"
 														width="40" /></a>
 												<!--[if mso]></td></tr></table><![endif]-->
@@ -196,8 +345,8 @@
 											<div align="left" class="img-container left autowidth"
 												style="padding-right: 0px;padding-left: 20px;">
 												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 20px;" align="left"><![endif]--><a
-													href="#" tabindex="-1" target="_blank"> <img border="0" class="left autowidth"
-														src="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/twitter.jpg"
+													href="#" tabindex="-1" target="_blank"> <img border="0"
+														class="left autowidth" src="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/twitter.jpg"
 														style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: none; width: 100%; max-width: 40px; display: block;"
 														width="40" /></a>
 												<!--[if mso]></td></tr></table><![endif]-->
@@ -215,7 +364,8 @@
 					<div style="background-color:transparent;">
 						<div class="block-grid"
 							style="Margin: 0 auto; min-width: 320px; max-width: 600px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; background-color: transparent;">
-							<div style="border-collapse: collapse;display: table;width: 100%;background-color:transparent;">
+							<div
+								style="border-collapse: collapse;display: table;width: 100%;background-color:transparent;">
 								<!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px"><tr class="layout-full-width" style="background-color:transparent"><![endif]-->
 								<!--[if (mso)|(IE)]><td align="center" width="600" style="background-color:transparent;width:600px; border-top: 0px solid #e4e4e4; border-left: 1px solid #e4e4e4; border-bottom: 1px solid #e4e4e4; border-right: 1px solid #e4e4e4;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top:5px; padding-bottom:5px;"><![endif]-->
 								<div class="col num12"
@@ -225,18 +375,99 @@
 										<div
 											style="border-top:0px solid #e4e4e4; border-left:1px solid #e4e4e4; border-bottom:1px solid #e4e4e4; border-right:1px solid #e4e4e4; padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
 											<!--<![endif]-->
+											<div align="center" class="img-container center autowidth fullwidth"
+												style="padding-right: 0px;padding-left: 0px;">
+												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]-->
+												<div style="font-size:1px;line-height:40px"> </div><img align="center"
+													border="0" class="center autowidth fullwidth" src="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/4.jpg"
+													style="text-decoration: none; -ms-interpolation-mode: bicubic; border: 0; height: auto; width: 100%; max-width: 598px; display: block;"
+													width="598" />
+												<!-- <div style="font-size:1px;line-height:40px"> </div> -->
+												<!--[if mso]></td></tr></table><![endif]-->
+											</div>
+											<!-- <div align="center" class="img-container center autowidth fullwidth"
+												style="padding-right: 0px;padding-left: 0px;"> -->
+												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]-->
+													<div class="container">
+														<div style="font-size:1px;line-height:40px"> </div>
+														<div align="center" class="img-container center autowidth fullwidth" style="padding-right: 0px;padding-left: 0px;">
+															<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]-->
+															<h1 style="font-family: 'Montserrat', sans-serif; font-size: 1.25rem; color: #fe4308; letter-spacing: normal; text-transform: uppercase;">
+																HERE’S how it works</h1>
+																<div style="font-size:1px;line-height:40px"> </div>
+															<!--[if mso]></td></tr></table><![endif]-->
+														</div>
+														
+													<div class="row image_block_1">
+														<div class="col-md-6">
+														  <!-- <div class="text-center component-img"> -->
+															<img class="img-fluid" src="img/landing/icons-svg/hexagone-friends-5.svg" alt="">
+														  <!-- </div> -->
+														  <div>
+															<p class="subtitle mt-4">Be part of our VIP Newsletter </p>
+														  </div>
+														</div>
+														<div class="col-md-6">
+														  <!-- <div class="text-center component-img"> -->
+															<img class="img-fluid" src="img/landing/icons-svg/hexagone-friends-10.svg" alt="">
+														  <!-- </div> -->
+														  <div>
+															<p class="subtitle mt-4">Get 15% discount for your next purchase</p>
+														  </div>
+														</div>
+														
+													</div>
+													<div class="row image_block_1">
+														<div class="col-md-6">
+														  <div class="text-center component-img">
+															<img class="img-fluid" src="img/landing/icons-svg/hexagone-friends-25.svg" alt="">
+														  </div>
+														  <div>
+															<p class="subtitle mt-4">Participate on 60 min Live Zoom Show with Founder</p>
+														  </div>
+														</div>
+														<div class="col-md-6">
+														  <div class="text-center component-img">
+															<img class="img-fluid" src="img/landing/icons-svg/hexagone-friends-50.svg" alt="">
+														  </div>
+														  <div>
+															<p class="subtitle mt-4">Participate on a 30 min Live Zoom chat with artist &amp; Philanthropist </p>
+														  </div>
+														</div>
+														</div>
+														
+													  <!-- </div> -->
+												<!--[if mso]></td></tr></table><![endif]-->
+											</div>
+											<div style="font-size:1px;line-height:40px"> </div>
+											<img align="center"
+											border="0" class="center autowidth fullwidth" src="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/4.jpg"
+											style="text-decoration: none; -ms-interpolation-mode: bicubic; border: 0; height: auto; width: 100%; max-width: 598px; display: block;"
+											width="598" />	
+											<div style="font-size:1px;line-height:40px"> </div>										
+											<h2 style="max-width: 598px;text-align: center;color: #707070;
+											    font-size: 17px; margin: 15px 90px;">It’s easy as sending out a quick email with your custom link to a few friends or sharing on social. Each one of your referrals that comes to the site and enters their email will give you point and benefits.</h2>
+											<div align="center" class="img-container center autowidth fullwidth"
+												style="padding-right: 0px;padding-left: 0px;">
+												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]--><img
+													align="center" border="0" class="center autowidth fullwidth"
+													src="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/7.jpg"
+													style="text-decoration: none; -ms-interpolation-mode: bicubic; border: 0; height: auto; width: 100%; max-width: 598px; display: block;"
+													width="598" />
+												<!--[if mso]></td></tr></table><![endif]-->
+											</div>
 											<div align="center" class="button-container"
 												style="padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
 												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"><tr><td style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px" align="center"><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" style="height:31.5pt; width:142.5pt; v-text-anchor:middle;" arcsize="10%" stroke="false" fillcolor="#4fd1a8"><w:anchorlock/><v:textbox inset="0,0,0,0"><center style="color:#ffffff; font-family:Tahoma, Verdana, sans-serif; font-size:14px"><![endif]--><a
 													href="javascript: void(0);"
 													style="-webkit-text-size-adjust: none; text-decoration: none; display: inline-block; color: #4fd1a8;padding-top: 5px; padding-bottom: 5px; font-family: 'Roboto', Tahoma, Verdana, Segoe, sans-serif; text-align: center; mso-border-alt: none; word-break: keep-all;"><%= Rails.application.config.action_mailer.default_url_options[:host] || "" %>?ref=<%= @user.referral_code %></a>
 												<!--[if mso]></center></v:textbox></v:roundrect></td></tr></table><![endif]-->
-											</div>											
+											</div>
 											<div align="center" class="img-container center autowidth fullwidth"
 												style="padding-right: 0px;padding-left: 0px;">
 												<!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]-->
-												<div style="font-size:1px;line-height:10px"> </div><img align="center" border="0"
-													class="center autowidth fullwidth" src="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/9.jpg"
+												<div style="font-size:1px;line-height:10px"> </div><img align="center"
+													border="0" class="center autowidth fullwidth" src="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/9.jpg"
 													style="text-decoration: none; -ms-interpolation-mode: bicubic; border: 0; height: auto; width: 100%; max-width: 598px; display: block;"
 													width="598" />
 												<div style="font-size:1px;line-height:10px"> </div>
@@ -249,9 +480,11 @@
 													style="-webkit-text-size-adjust: none; text-decoration: none; display: inline-block; color: #ffffff; background-color: #4fd1a8; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; width: auto; width: auto; border-top: 1px solid #4fd1a8; border-right: 1px solid #4fd1a8; border-bottom: 1px solid #4fd1a8; border-left: 1px solid #4fd1a8; padding-top: 5px; padding-bottom: 5px; font-family: 'Roboto', Tahoma, Verdana, Segoe, sans-serif; text-align: center; mso-border-alt: none; word-break: keep-all;"
 													target="_blank"><span
 														style="padding-left:20px;padding-right:20px;font-size:14px;display:inline-block;">
-														<span style="font-size: 16px; line-height: 2; mso-line-height-alt: 32px;"><span
+														<span
+															style="font-size: 16px; line-height: 2; mso-line-height-alt: 32px;"><span
 																style="font-size: 14px; line-height: 28px;"><strong><span
-																		style="line-height: 28px; font-size: 14px;"># OF REFERRALS
+																		style="line-height: 28px; font-size: 14px;"># OF
+																		REFERRALS
 																		RECEIVED</span></strong></span></span>
 													</span></a>
 												<!--[if mso]></center></v:textbox></v:roundrect></td></tr></table><![endif]-->
