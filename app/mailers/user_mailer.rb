@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "ShareNet <do-not-reply@sharenet.com>"
+  default from: "ShareNest <do-not-reply@sharenest.com>"
 
   def signup_email(user)
     @user = user
