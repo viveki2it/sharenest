@@ -14,7 +14,7 @@
         <p class="mt-3 text-center terms">*See terms</p>
         <a href="#" class="btn bg-black text-white btn-xl mt-4 button-black">Learn More</a>
         <a href="javascript: void(0);" class="play">
-        <p class="mt-5">  <img src="/assets/component-6-1.svg" alt="" width="34px" class="mr-3"> See how you can help</p>
+        <p class="mt-5 bold-col">  <img src="/assets/component-6-1.svg" alt="" width="40px" class="mr-3"> See how you can help</p>
         </a>
       </div>
     </div>
@@ -66,7 +66,8 @@
           </div>
         </div>
         <div class="col-lg-12 text-center">
-          <a href="#" class="btn text-white btn-xl mt-4 button-red">GET YOUR CODE</a>
+          <input class="input" id="share-link" type="text" style="display: none" value="<%= root_url %>?ref=<%= @user.referral_code %>" readonly>
+          <button class="btn text-white btn-xl mt-4 button-red" onclick="copy()">GET YOUR CODE</button>
         </div>
       </div>
     </div>
@@ -92,15 +93,18 @@
       <h1 class="text-center mb-5">Here’s How it Works</h1>
     </div>
     <div class="container content">
-      <div class="row align-items-center">
+      <div class="row">
         <div class="col-lg-3">
           <div class="text-center component-img">
             <img class="img-fluid" src="/assets/component-7-1.svg" alt="">
           </div>
           <div>
             <p class="title">5 FRIENDS</p>
-            <p class="subtitle">Exclusive access to our
-              <strong>VIP newsletter</strong> </p>
+            <p class="subtitle">
+              We will donate 5
+              dollars on your behalf
+              to top non-profits
+            </p>
           </div>
         </div>
         <div class="col-lg-3">
@@ -109,7 +113,12 @@
           </div>
           <div>
             <p class="title">10 FRIENDS</p>
-            <p class="subtitle">Get <strong>15% discount</strong> in your next purchase</p>
+            <p class="subtitle">
+              Choose 1 gift for you and
+              we will donate 2 of the
+              same item to children in
+              need.
+            </p>
           </div>
         </div>
         <div class="col-lg-3">
@@ -118,7 +127,17 @@
           </div>
           <div>
             <p class="title">25 FRIENDS</p>
-            <p class="subtitle">Exclusive access to <strong>live zoom show</strong> with our <strong>Founder</strong></p>
+            <p class="subtitle">
+              Access our platform 1 week
+              prior to everyone and choose
+              to volunteer for top
+              international foundations
+                        <br />+ <br />
+              Participate on an IG live
+              discussion panel with 10
+              celebrities to discuss how to
+              create a better world.
+            </p>
           </div>
         </div>
         <div class="col-lg-3">
@@ -127,7 +146,13 @@
           </div>
           <div>
             <p class="title">50 FRIENDS</p>
-            <p class="subtitle">Exclusive access to <strong>live zoom chat</strong> with a special <strong>Artist or Philanthropist</strong> </p>
+            <p class="subtitle">
+              Choose a
+              celebrity for
+              you to do a
+              social project
+              with
+            </p>
           </div>
         </div>
         
@@ -174,3 +199,18 @@
     <!-- /.container -->
   </footer>
 <%= render 'video_modal' %>
+<script>
+function copy() {
+  /* Get the text field */
+  var copyText = document.getElementById("share-link");
+
+  /* Select the text field */
+  copyText.select();
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied to clipboard: " + copyText.value);
+}
+</script>
