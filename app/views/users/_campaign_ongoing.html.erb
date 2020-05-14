@@ -135,14 +135,18 @@
         <div class="col-lg-5 p-0">
           <img src="/assets/18569-3-x@2x.png" class="img-fluid">
         </div>
-        <div class="col-lg-6  volunteer-text">
-          <h1 class="section-title">Volunteering is simple <br> with ShareNest</h1>
-          <h2 class="section-subtitle">Our platform will be live very soon, join our movement and get access before anyone else.</h2>
-          <p class="section-copy">By joining us we will send you a unique code so you can share with other potential volunteers, you will get rewards for helping us reach more people interested in helping.</p>
-          <%= form_for @user, :url => { :action => "create" }, :class => "form-join" do |f| %>
-            <p><%= f.text_field :email, :placeholder => "Your email", class: "email" %></p>
-            <p><button class="btn-primary join" type="submit">Join our pre launch now!</button></p>
-          <% end %>
+        <div class="col-lg-6">
+          <div class="volunteer-text">
+            <h1 class="section-title">Volunteering is simple <br> with ShareNest</h1>
+            <h2 class="section-subtitle">Our platform will be live very soon, join our movement and get access before anyone else.</h2>
+            <p class="section-copy">By joining us we will send you a unique code so you can share with other potential volunteers, you will get rewards for helping us reach more people interested in helping.</p>
+          </div>
+          <div style="margin: 10px auto;max-width: 450px;">
+            <%= form_for @user, :url => { :action => "create" }, :class => "form-join" do |f| %>
+              <p><%= f.text_field :email, :placeholder => "Your email", class: "email" %></p>
+              <p><button class="btn-primary join" type="submit">Join our pre launch now!</button></p>
+            <% end %>
+          </div>
         </div>
         
       </div>
@@ -216,12 +220,11 @@
         
       </div>
       <div class="footer_content">
-        <h1>SPECIAL GIFT FOR THE 10 PEOPLE WHO INVITE THE MOST FRIENDS BY JULY 4<sup>th</sup>: </h1> 
-        <h2>
-          Get <span>FREE</span> volunteer <span>TRIP</span> everything paid for with <span>CELEBRITY</span> to do
-        </h2>
+        <h1>Remember!</h1>
+        <h2>We got a special gift for the 10 people <br />who invite the most friends by july 4<sup>th</sup>:</h2>
         <h3>
-            Some <span>SOCIAL GOOD</span> abroad
+            Get <span>FREE</span> volunteer <span>TRIP</span> everything paid for with <br/>
+            <span>CELEBRITY</span> to do Some <span>SOCIAL GOOD</span> abroad
         </h3>
       </div>
     </div>
