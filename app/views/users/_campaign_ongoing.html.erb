@@ -14,17 +14,16 @@
           <div class="container">
             <h1 class="mb-0 p-1 mt-4 bold-col">The world’s first  <br> marketplace for <br> Online Volunteering</h1>
             <p class="masthead-subheading mt-5 mb-5">Connecting <strong> those who can help</strong> with<br> <strong> those who need help.</strong></p>
-            
+            <a href="javascript: void(0);" class="play">
+              <p class="mt-5 bold-col mb-5"> 
+                <img src="/assets/component-6-1.svg" alt="" width="40px" class="mr-3"> See how you can help
+              </p>
+            </a>
             <%= form_for @user, :url => { :action => "create" } do |f| %>
               <p><%= f.text_field :email, :placeholder => "Your email", class: "email" %></p>
               <p><button class="btn-primary join" type='submit'>Join the movement</button></p>
             <% end %>
             <p class="mt-5"> #VolunteeringMatters</p>
-            <a href="javascript: void(0);" class="play">
-              <p class="mt-5 bold-col"> 
-                <img src="/assets/component-6-1.svg" alt="" width="40px" class="mr-3"> See how you can help
-              </p>
-            </a>
           </div>
 
         </div>
@@ -112,9 +111,9 @@
               <div class="col-lg-6 features"><img src="/assets/landing/icons-svg/Smile.svg"  alt="">
                 <p>Positively impacts your self-esteem</p>
               </div>
-              <div class="col-lg-6 features"><img src="/assets/landing/icons-svg/mobile.svg" style="width: 30px !important;" alt="">
+              <!--<div class="col-lg-6 features"><img src="/assets/landing/icons-svg/mobile.svg" style="width: 30px !important;" alt="">
                 <p>Reduces screen time which helps your brain</p>
-              </div>
+              </div>-->
               <div class="col-lg-6 features"><img src="/assets/landing/icons-svg/link2.svg"  alt="">
                 <p>Increases your community engagement</p>
               </div>
@@ -137,11 +136,11 @@
         </div>
         <div class="col-lg-6">
           <div class="volunteer-text">
-            <h1 class="section-title">Volunteering is simple <br> with ShareNest</h1>
-            <h2 class="section-subtitle">Our platform will be live very soon, join our movement and get access before anyone else.</h2>
-            <p class="section-copy">By joining us we will send you a unique code so you can share with other potential volunteers, you will get rewards for helping us reach more people interested in helping.</p>
+            <h1 class="section-title">Volunteering made simple</h1>
+            <h2 class="section-subtitle section-volunteer">Our platform will be live very soon, join our movement and get access before anyone else.</h2>
+            <!--<p class="section-copy">By joining us we will send you a unique code so you can share with other potential volunteers, you will get rewards for helping us reach more people interested in helping.</p>-->
           </div>
-          <div style="margin: 10px auto;max-width: 450px;">
+          <div class="section-volunteer">
             <%= form_for @user, :url => { :action => "create" }, :class => "form-join" do |f| %>
               <p><%= f.text_field :email, :placeholder => "Your email", class: "email" %></p>
               <p><button class="btn-primary join" type="submit">Join our pre launch now!</button></p>
@@ -156,10 +155,10 @@
   <section>
     <div class="container section-5">
       <h1 class="section-title">Invite friends to change the world and earn benefits</h1>
-      <p>It’s easy as sending out a quick email with your custom link to a few friends or sharing on Soacial media. Each one of your referrals that comes to the site and enters their email will give you point and benefits.</p>
+      <p>It’s easy as sending out a quick email with your custom link to a few friends or sharing on Soacial media.</p>
     </div>
     <div class="container content">
-      <div class="row prizes-content">
+      <!-- <div class="row prizes-content">
         <div class="col-lg-3">
           <div class="text-center component-img">
             <img class="img-fluid" src="/assets/landing/icons-svg/hexagone-friends-5.svg" alt="">
@@ -218,14 +217,14 @@
           </div>
         </div>
         
-      </div>
+      </div>-->
       <div class="footer_content">
         <h1>Remember!</h1>
         <h2>We got a special gift for the 10 people <br />who invite the most friends by july 4<sup>th</sup>:</h2>
-        <h3>
+        <!--<h3>
             Get <span>FREE</span> volunteer <span>TRIP</span> everything paid for with <br/>
             <span>CELEBRITY</span> to do Some <span>SOCIAL GOOD</span> abroad
-        </h3>
+        </h3>-->
       </div>
     </div>
   </section>
