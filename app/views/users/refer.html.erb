@@ -13,9 +13,12 @@
         <p class="masthead-subheading mt-5">Invite your friends to ShareNest - for each friend, we have special gifts for you</p>
         <p class="mt-3 text-center terms">
         <%= link_to "*See terms", privacy_policy_path, target: '_blank', style: "color: white;" %></p>
-        <a href="#how-it-works" class="btn bg-black text-white btn-xl mt-4 button-black">Learn More</a>
+        <input class="input" id="share-link" type="hidden" value="<%= root_url %>?ref=<%= @user.referral_code %>" readonly>
+        <a href="javascript: void(0);" class="btn bg-black text-white btn-xl mt-4 button-black" onclick="copy()">
+          Share Now
+        </a>
         <a href="javascript: void(0);" class="play">
-        <p class="mt-5 bold-col">  <img src="/assets/component-6-1.svg" alt="" width="40px" class="mr-3"> Share our video </p>
+        <p class="mt-5 bold-col">  <img src="/assets/component-6-1.svg" alt="" width="40px" class="mr-3"> See how you can help </p>
         </a>
       </div>
     </div>
@@ -89,7 +92,7 @@
     </div>
   </section>
 
-  <!-- <section id="how-it-works">
+  <section id="how-it-works">
     <div class="container">
       <h1 class="text-center mb-5">Here’s How it Works</h1>
     </div>
@@ -102,9 +105,7 @@
           <div>
             <p class="title">5 FRIENDS</p>
             <p class="subtitle">
-              We will donate 5
-              dollars on your behalf
-              to top non-profits
+              Access to VIP Newsletter
             </p>
           </div>
         </div>
@@ -115,10 +116,7 @@
           <div>
             <p class="title">10 FRIENDS</p>
             <p class="subtitle">
-              Choose 1 gift for you and
-              we will donate 2 of the
-              same item to children in
-              need.
+              Become part of our Ambassadors Program
             </p>
           </div>
         </div>
@@ -129,15 +127,7 @@
           <div>
             <p class="title">25 FRIENDS</p>
             <p class="subtitle">
-              Access our platform 1 week
-              prior to everyone and choose
-              to volunteer for top
-              international foundations
-                        <br />+ <br />
-              Participate on an IG live
-              discussion panel with 10
-              celebrities to discuss how to
-              create a better world.
+              Access our platform 1 week prior to everyone and choose to volunteer for top projects
             </p>
           </div>
         </div>
@@ -148,18 +138,14 @@
           <div>
             <p class="title">50 FRIENDS</p>
             <p class="subtitle">
-              Choose a
-              celebrity for
-              you to do a
-              social project
-              with
+              Join a private zoom meeting with founder of ShareNest & a VERY special guest
             </p>
           </div>
         </div>
         
       </div>
     </div>
-  </section> -->
+  </section>
   <section>
     <div class="volunteer">
       <h1 class="text-center mb-0 volunteermatters"><strong>#volunteermatters</strong></h1>
@@ -205,13 +191,15 @@ function copy() {
   /* Get the text field */
   var copyText = document.getElementById("share-link");
 
-  /* Select the text field */
-  copyText.select();
-
-  /* Copy the text inside the text field */
-  document.execCommand("copy");
-
-  /* Alert the copied text */
+  const el = document.createElement('textarea');
+  el.value = copyText.value;
+  el.setAttribute('readonly', '');
+  el.style.position = 'absolute';
+  el.style.left = '-9999px';
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);  
   alert("Copied to clipboard: " + copyText.value);
-}
+}  
 </script>
