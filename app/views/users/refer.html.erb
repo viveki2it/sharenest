@@ -4,7 +4,7 @@
   <header class="masthead text-center text-white">
     <div class="page">
       <div class="logo">
-        <img src="/assets/color-logo-transparent@2x.png" max-width="106px" />    
+        <img src="/assets/color-logo-transparent@11x.png" max-width="106px" />    
       </div>
     </div>
     <div class="masthead-content page">
@@ -12,13 +12,14 @@
         <h1 class="masthead-heading mb-0">Thank you for joining the movement and raising your hands to create a better world!</h1>
         <p class="masthead-subheading mt-5">Invite your friends to ShareNest - for each friend, we have special gifts for you</p>
         <p class="mt-3 text-center terms">
-        <%= link_to "*See terms", privacy_policy_path, target: '_blank', style: "color: white;" %></p>
+        <%= link_to "*See terms", "https://sharenest.com/mobile-app-privacy-policy/
+https://sharenest.com/terms-of-service/", target: '_blank', style: "color: white;" %></p>
         <input class="input" id="share-link" type="hidden" value="<%= root_url %>?ref=<%= @user.referral_code %>" readonly>
         <a href="javascript: void(0);" class="btn bg-black text-white btn-xl mt-4 button-black" onclick="copy()">
           Share Now
         </a>
         <a href="javascript: void(0);" class="play">
-        <p class="mt-5 bold-col">  <img src="/assets/component-6-1.svg" alt="" width="40px" class="mr-3"> See how you can help </p>
+        <p class="mt-5 bold-col">  <img src="/assets/component-6-1.svg" alt="" width="40px" class="mr-3"> Learn More </p>
         </a>
       </div>
     </div>
@@ -151,7 +152,13 @@
       <h1 class="text-center mb-0 volunteermatters"><strong>#volunteermatters</strong></h1>
         <h2 class="text-center">Share, Help and Win</h2>
         <div class="container">
-          <div class="share"><p class="share-code">Your code:  <strong class="ml-2">?ref=<%= @user.referral_code %></strong></p></div>
+          <div class="share" style="background-color: #f2f2f2;">
+            <p class="share-code" style="padding: 0px;">
+              <a href="javascript: void(0);" class="btn btn-xl text-white ml-2" style="background-color: #fe4308; border-radius: 15px; padding: 10px 30px;" onclick="copy()">
+                Your code
+              </a>
+            </p>
+          </div>
           <%= render "/users/invite_friends" %>
         </div>
         <div class="container">
