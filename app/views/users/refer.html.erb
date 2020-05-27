@@ -12,8 +12,7 @@
         <h1 class="masthead-heading mb-0">Thank you for joining the movement and raising your hands to create a better world!</h1>
         <p class="masthead-subheading mt-5">Invite your friends to ShareNest - for each friend, we have special gifts for you</p>
         <p class="mt-3 text-center terms">
-        <%= link_to "*See terms", "https://sharenest.com/mobile-app-privacy-policy/
-https://sharenest.com/terms-of-service/", target: '_blank', style: "color: white;" %></p>
+        <%= link_to "*See terms", "https://sharenest.com/mobile-app-privacy-policy/", target: '_blank', style: "color: white;" %></p>
         <input class="input" id="share-link" type="hidden" value="<%= root_url %>?ref=<%= @user.referral_code %>" readonly>
         <a href="javascript: void(0);" class="btn bg-black text-white btn-xl mt-4 button-black" onclick="copy()">
           Share Now
@@ -186,7 +185,9 @@ https://sharenest.com/terms-of-service/", target: '_blank', style: "color: white
   <!-- Footer -->
   <footer class="py-5 bg-white">
     <div class="container">
-      <p class="m-0 text-center">Terms of ServiceMobile  |  App Privacy Policy <br>
+      <p class="m-0 text-center">
+      <%= link_to "Terms of ServiceMobile", "https://sharenest.com/terms-of-service/", style: "text-decoration: none; color: #222;" %> | <%= link_to  "App Privacy Policy", "https://sharenest.com/mobile-app-privacy-policy/", style: "text-decoration: none; color: #222;" %>
+       <br>
         Copyrights © 2020 ShareNest LLC. All rights reserved</p>
     </div>
     
