@@ -187,6 +187,6 @@ function copy() {
   el.select();
   document.execCommand('copy');
   document.body.removeChild(el);  
-  alert(<%= t("copied_clip") %> + copyText.value);
+  alert('<%= t("copied_clip") %>' + copyText.value);
 }  
 </script>
