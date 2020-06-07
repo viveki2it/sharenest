@@ -163,5 +163,12 @@ en:
     terms_p34: "These Terms, together with any amendments and any additional agreements you may enter into with ShareNest in connection with the Service, will constitute the entire agreement between you and ShareNest concerning the Service. If any provision of these Terms is deemed invalid by a court of competent jurisdiction, the invalidity of such provision shall not affect the validity of the remaining provisions of this Agreement, which shall remain in full force and effect. No waiver of any sections of these Terms shall be deemed a further or continuing waiver of such term or any other term, and ShareNest’s failure to assert any right or provision under these Terms shall not constitute a waiver of such right of provision. We may provide notifications, whether these are required by law of are for marketing or other business related purposes, to you via email notice, written or hard copy notice, or through posting of such notice on our website, as determined by us in our sole discretion."
     terms_p35_1: "Please contact us at "
     terms_p35_2: " with any questions regarding these Terms."
+  flash:
+    flash_msg: "Please check your email for the referral unique link"
+    flash_msg2: "Please enter email"
+    flash_msg3: 'Something went wrong!'
+    flash_msg4: 'Your referral code is does not match!'
+    flash_msg5: "Your IP address has reached the max entries. Your IP address has been blocked by the system."
+
 
 

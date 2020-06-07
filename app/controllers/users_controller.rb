@@ -24,11 +24,11 @@ class UsersController < ApplicationController
     if @user.save
       @user.update_attributes(:referrer_id => @user.id) if ref_code.blank?
       cookies[:h_email] = { value: @user.email }
-      redirect_to user_path(@user.referral_code), notice: "Please check your email for the referral unique link"
+      redirect_to user_path(@user.referral_code), notice: I18n.t("flash.flash_msg")
     else
       if email.blank?
         logger.info("Error saving user with email, email is empty")
-        flash[:error] = "Please enter email"
+        flash[:error] = I18n.t("flash.flash_msg2")
       else
         errors = ""
         errors += flatten_errors(@user.errors) if !@user.errors.empty?
@@ -47,7 +47,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.nil?
-        format.html { redirect_to root_path, alert: 'Something went wrong!' }
+        format.html { redirect_to root_path, alert: I18n.t("flash.flash_msg3") }
       else
         format.html # refer.html.erb
       end
@@ -63,7 +63,7 @@ class UsersController < ApplicationController
   
   def show
     if @user.blank?
-      redirect_to root_path, alert: 'Your referral code is does not match!'
+      redirect_to root_path, alert: I18n.t("flash.flash_msg4")
     else
       render "refer"
     end
@@ -101,7 +101,7 @@ class UsersController < ApplicationController
     elsif current_ip.count > 2
       logger.info('IP address has already appeared three times in our records.
                  Redirecting user back to landing page.')
-      flash[:error] = "Your IP address has reached the max entries. Your IP address has been blocked by the system."
+      flash[:error] = I18n.t("flash.flash_msg5")
       return redirect_to root_path
     else
       current_ip.count += 1
