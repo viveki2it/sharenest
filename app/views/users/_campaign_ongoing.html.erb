@@ -12,18 +12,18 @@
         <div class="col-lg-6 mb-5 empty-col">&nbsp;&nbsp;</div>
         <div class="col-lg-6">
           <div class="container">
-            <h1 class="mb-0 p-1 mt-4 bold-col">The "2-sided"  <br> marketplace for <br> Online Volunteering</h1>
-            <p class="masthead-subheading mt-5 mb-5">Connecting <strong> those who can help</strong> with<br> <strong> those who need help.</strong></p>
+            <h1 class="mb-0 p-1 mt-4 bold-col"><%= t('sided').html_safe %></h1>
+            <p class="masthead-subheading mt-5 mb-5"><%= t("connecting").html_safe %></p>
             <a href="javascript: void(0);" class="play">
               <p class="mt-5 bold-col mb-5"> 
-                <img src="/assets/component-6-1.svg" alt="" width="40px" class="mr-3"> See how we work
+                <img src="/assets/component-6-1.svg" alt="" width="40px" class="mr-3"><%= t("see") %>
               </p>
             </a>
-            <%= form_for @user, :url => { :action => "create" } do |f| %>
-              <p><%= f.text_field :email, :placeholder => "Your email", class: "email" %></p>
-              <p><button class="btn-primary join" type='submit'>Join the movement</button></p>
+            <%= form_for @user, url: { :action => "create" } do |f| %>
+              <p><%= f.text_field :email, placeholder: t("your"), class: "email" %></p>
+              <p><button class="btn-primary join" type='submit'><%= t("join_movement") %></button></p>
             <% end %>
-            <p class="mt-5"> #VolunteeringMatters</p>
+            <p class="mt-5"> <%= t("vol") %></p>
           </div>
 
         </div>
@@ -33,14 +33,14 @@
 
   <section>
     <div class="container-fluid section-1">
-      <h1 class="section-1-title">What’s ShareNest?</h1>
-      <p class="section-1-copy">Sharenest is the world’s first "2-sided" marketplace for online volunteering</p>
-      <p class="section-1-copy-orange">Join for free now, you just have to create a profile and wait for those in need to reach out for your help.</p>
+      <h1 class="section-1-title"><%= t("what") %></h1>
+      <p class="section-1-copy"><%= t("sharenest") %></p>
+      <p class="section-1-copy-orange"><%= t("join_free") %></p>
     </div>
   </section>
   
   <section>
-    <h1 class="section-general-title">Here’s how it works</h1>
+    <h1 class="section-general-title"><%= t("here_works") %></h1>
     <div class="container-fluid p-0 m-0 section-2">
       <div class="row align-items-center section-2-container">
         <div class="col-lg-6 p-0">
@@ -48,9 +48,9 @@
         </div>
         <div class="col-lg-6 right-column">
           <img src="/assets/landing/hexagonal-number.svg" alt="">
-          <h1 class="section-2-title">Create a profile</h1>
+          <h1 class="section-2-title"><%= t("profile") %></h1>
           <p class="section-2-copy">
-            Let the world know what your unique talent is, and what you're passionate about! Remember, your profile will be what organizations use to inquire for your services, so don't be shy, brag a little! &#x1F642;
+            <%= t("let_world") %>
           </p>
         </div>
       </div>
@@ -61,9 +61,9 @@
       <div class="row align-items-center section-3-container">
       <div class="col-lg-6 right-column">
         <img src="/assets/landing/hexagonal-number-2.svg" alt="">
-        <h1 class="section-2-title">Wait for volunteer  <br> opportunities</h1>
+        <h1 class="section-2-title"><%= t("wait").html_safe %></h1>
           <p class="section-2-copy">
-            After you've completed your profile, simply wait for organizations around the world to give you a digital tap on the shoulder, and begin the conversation! You can expect an exciting variety of projects and organizations you'll be contacted by, with some amazing causes!
+            <%= t("profile_complete") %>
           </p>
       </div>
       <div class="col-lg-6 p-0">
@@ -81,9 +81,9 @@
         </div>
         <div class="col-lg-6 right-column">
           <img src="/assets/landing/hexagonal-number-3.svg" alt="">
-          <h1 class="section-2-title">Accept the <br> opportunity</h1>
+          <h1 class="section-2-title"><%= t("accept").html_safe %></h1>
           <p class="section-2-copy">
-            Once you've identified the organization and cause you're most excited about, simply click to engage, and begin making an impact!
+            <%= t("identify") %>
           </p>
         </div>
       </div>
@@ -97,28 +97,28 @@
           
             <div class="row">
               <div class="col-lg-6 features"><img src="/assets/landing/icons-svg/Money.svg"  alt="">
-                <p>Improves your emotional intelligence and gives you more fulfillment</p>
+                <p><%= t("improve") %></p>
               </div>
               <div class="col-lg-6 features"><img src="/assets/landing/icons-svg/Apple.svg"  alt="">
-                <p>Awakens a behavioral change (from taker to giver)</p>
+                <p><%= t("awaken") %></p>
               </div>
               <div class="col-lg-6 features"><img src="/assets/landing/icons-svg/Chart.svg"  alt="">
-                <p>Improves your school & college experience</p>
+                <p><%= t("experience") %></p>
               </div>
               <div class="col-lg-6 features"><img src="/assets/landing/icons-svg/Dollar-3.svg"  alt="">
-                <p>Increases your job prospects</p>
+                <p><%= t("increase") %></p>
               </div>
               <div class="col-lg-6 features"><img src="/assets/landing/icons-svg/Smile.svg"  alt="">
-                <p>Positively impacts your self-esteem</p>
+                <p><%= t("positive") %></p>
               </div>
               <div class="col-lg-6 features"><img src="/assets/bitmap-copy-8@2x.png" style="width: 30px !important;" alt="">
-                <p>Reduces wasted time on unnecessary tasks</p>
+                <p><%= t("reduce") %></p>
               </div>
               <div class="col-lg-6 features"><img src="/assets/landing/icons-svg/link2.svg"  alt="">
-                <p>Increases your community engagement</p>
+                <p><%= t("community") %></p>
               </div>
               <div class="col-lg-6 features"><img src="/assets/landing/icons-svg/User-2.svg"  alt="">
-                <p>Creates connections in real life with real friends</p>
+                <p><%= t("create_conn") %></p>
               </div>
             </div>
         </div>
@@ -136,14 +136,14 @@
         </div>
         <div class="col-lg-6">
           <div class="volunteer-text">
-            <h1 class="section-title">Volunteering made simple</h1>
-            <h2 class="section-subtitle section-volunteer">Our platform will be live very soon, join our movement and get access before anyone else.</h2>
+            <h1 class="section-title"><%= t("vol_simple") %></h1>
+            <h2 class="section-subtitle section-volunteer"><%= t("our_platform") %></h2>
             <!--<p class="section-copy">By joining us we will send you a unique code so you can share with other potential volunteers, you will get rewards for helping us reach more people interested in helping.</p>-->
           </div>
           <div class="section-volunteer">
             <%= form_for @user, :url => { :action => "create" }, :class => "form-join" do |f| %>
-              <p><%= f.text_field :email, :placeholder => "Your email", class: "email" %></p>
-              <p><button class="btn-primary join" type="submit">Join our pre launch now!</button></p>
+              <p><%= f.text_field :email, :placeholder => t("your"), class: "email" %></p>
+              <p><button class="btn-primary join" type="submit"><%= t("join_pre") %></button></p>
             <% end %>
           </div>
         </div>
@@ -154,8 +154,8 @@
 
   <section>
     <div class="container section-5">
-      <h1 class="section-title">Invite friends to change the world and earn benefits</h1>
-      <p>It’s easy as sending out a quick email with your custom link to a few friends or sharing on Soacial media.</p>
+      <h1 class="section-title"><%= t("invite_friend") %></h1>
+      <p><%= t("sending_email") %></p>
     </div>
     <div class="container content">
       <div class="row prizes-content">
@@ -168,7 +168,7 @@
           </div>
           <div>
             <p class="subtitle mt-4">
-              Share with 5 people and you will get access to our platform before anyone else.
+              <%= t("five_text") %>
             </p>
           </div>
         </div>
@@ -178,7 +178,7 @@
           </div>
           <div>
             <p class="subtitle mt-4">
-              Share with 25 people and you will get first access to our platform before anyone else and first pick on volunteer opportunities.
+              <%= t("tfive_text") %>
             </p>
           </div>
         </div>
@@ -188,8 +188,8 @@
         
       </div>
       <div class="footer_content">
-        <h1>Remember!</h1>
-        <h2>We got a special gift for the 10 people <br />who invite the most friends</h2>
+        <h1><%= t("remember") %></h1>
+        <h2><%= t("gift").html_safe %></h2>
         <!--<h3>
             Get <span>FREE</span> volunteer <span>TRIP</span> everything paid for with <br/>
             <span>CELEBRITY</span> to do Some <span>SOCIAL GOOD</span> abroad
@@ -201,7 +201,7 @@
 
   <section>
     <div class="container section-5"> 
-      <h1 class="section-title">Our Partners</h1>
+      <h1 class="section-title"><%= t("partners") %></h1>
       <div class="container">
         <div class="row align-items-center"> 
           <div class="col-lg-12">
@@ -215,14 +215,14 @@
 
   <section>
     <div class=" container-fluid section-join-us">
-      <h1 class="section-title mb-5 text-white">Join us now</h1> 
+      <h1 class="section-title mb-5 text-white"><%= t("join_us") %></h1> 
       <div class="row align-items-center join-us">
         <div class="col-lg-12">
-          <%= form_for @user, :url => { :action => "create" } do |f| %>
-            <p><%= f.text_field :email, :placeholder => "Your email", class: "email" %></p>
-            <p><button class="btn-primary join">Join our pre launch now!</button></p>
+          <%= form_for @user, url: { action: "create" } do |f| %>
+            <p><%= f.text_field :email, placeholder: t("your"), class: "email" %></p>
+            <p><button class="btn-primary join"><%= t("join_pre") %></button></p>
           <% end %>
-          <p class="text-white mt-5">#VolunteeringMatters</p>
+          <p class="text-white mt-5"><%= t("vol") %></p>
         </div>
     </div>
   </div>
@@ -233,8 +233,10 @@
   <!-- Footer -->
   <footer class="py-5 bg-white">
     <div class="container">
-      <p class="m-0 text-center">      <%= link_to "Terms of Service", privacy_policy_path, target: '_blank', style: "text-decoration: none; color: #222;" %>  <br>
-        Copyrights © 2020 ShareNest LLC. All rights reserved</p>
+      <p class="m-0 text-center">      
+        <%= link_to t("terms"), privacy_policy_path, target: '_blank', style: "text-decoration: none; color: #222;" %>  <br>
+        <%= t("rights") %>
+      </p>
     </div>
     
     <!-- /.container -->

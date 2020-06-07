@@ -9,16 +9,16 @@
     </div>
     <div class="masthead-content page">
       <div class="container">
-        <h1 class="masthead-heading mb-0">Thank you for joining the movement and raising your hands to create a better world!</h1>
-        <p class="masthead-subheading mt-5">Invite your friends to ShareNest - for each friend, we have special gifts for you</p>
+        <h1 class="masthead-heading mb-0"><%= t("thank") %></h1>
+        <p class="masthead-subheading mt-5">I<%= t("invite") %></p>
         <p class="mt-3 text-center terms">
-        <%= link_to "*See terms", privacy_policy_path, target: '_blank', style: "color: white;" %></p>
+        <%= link_to t("see_terms"), privacy_policy_path, target: '_blank', style: "color: white;" %></p>
         <input class="input" id="share-link" type="hidden" value="<%= root_url %>?ref=<%= @user.referral_code %>" readonly>
         <a href="javascript: void(0);" class="btn bg-black text-white btn-xl mt-4 button-black" onclick="copy()">
-          Share Now
+          <%= t("share") %>
         </a>
         <a href="javascript: void(0);" class="play">
-        <p class="mt-5 bold-col">  <img src="/assets/component-6-1.svg" alt="" width="40px" class="mr-3"> Learn More </p>
+        <p class="mt-5 bold-col">  <img src="/assets/component-6-1.svg" alt="" width="40px" class="mr-3"><%= t("learn") %></p>
         </a>
       </div>
     </div>
@@ -26,8 +26,8 @@
 
   <section class="page">
     <div class="container-fluid">
-      <h1 class="section-1-title">U Get What U Share</h1>
-      <h2 class="section-1-subtitle">in 4 Easy Steps</h2>
+      <h1 class="section-1-title"><%= t("u_get") %></h1>
+      <h2 class="section-1-subtitle"><%= t("steps") %></h2>
     </div>
   </section>
   <section>
@@ -38,8 +38,8 @@
             <img class="img-fluid" src="/assets/component-1-1.svg" alt="">
           </div>
           <div>
-            <p class="title">SIGN UP TO SHARENEST</p>
-            <p class="subtitle">Add your email to the form (make sure you’re register as a volunteer on our platform)</p>
+            <p class="title"><%= t("sign_up") %></p>
+            <p class="subtitle"><%= t("add_email") %></p>
           </div>
         </div>
         <div class="col-lg-3">
@@ -47,8 +47,8 @@
             <img class="img-fluid" src="/assets/component-2-1.svg" alt="">
           </div>
           <div>
-            <p class="title">GET YOUR <br> UNIQUE CODE</p>
-            <p class="subtitle">We will send you a unique code to your email to share with friends</p>
+            <p class="title"><%= t("unique").html_safe %></p>
+            <p class="subtitle"><%= t("send_code") %></p>
           </div>
         </div>
         <div class="col-lg-3">
@@ -56,8 +56,8 @@
             <img class="img-fluid" src="/assets/component-3-1.svg" alt="">
           </div>
           <div>
-            <p class="title">SHARE YOUR <br>CODE</p>
-            <p class="subtitle">Use your code and for each friend you get in ShareNest we will give you points</p>
+            <p class="title"><%= t("share_code").html_safe %></p>
+            <p class="subtitle"><%= t("use_code") %></p>
           </div>
         </div>
         <div class="col-lg-3">
@@ -65,8 +65,8 @@
             <img class="img-fluid" src="/assets/component-4-1.svg" alt="">
           </div>
           <div>
-            <p class="title">GET SPECIAL REWARDS</p>
-            <p class="subtitle">By sharing with 5, 10, 25 or 50 friends you will get special rewards in each stage.</p>
+            <p class="title"><%= t("reward") %></p>
+            <p class="subtitle"><%= t("share_friends") %></p>
           </div>
         </div>
         <!-- <div class="col-lg-12 text-center">
@@ -84,9 +84,9 @@
           <img src="/assets/18569-3-x@2x.png" class="img-fluid" width="600px">
         </div>
         <div class="col-lg-6 align-items-center p-5">
-          <h1 class="section-2-title">Help Others by Sharing</h1>
-          <h2 class="section-2-subtitle">Our NGO’s need people like you</h2>
-          <p class="section-2-copy">By sharing with others you’re helping many organizations get talented people like you - We need your help to get more volunteers and by helping us we want to give back to you</p>
+          <h1 class="section-2-title"><%= t("help") %></h1>
+          <h2 class="section-2-subtitle"><%= t("ngo") %></h2>
+          <p class="section-2-copy"><%= t("share_with_others") %></p>
         </div>
       </div>
     </div>
@@ -94,7 +94,7 @@
 
   <section id="how-it-works">
     <div class="container">
-      <h1 class="text-center mb-5">Here’s How it Works</h1>
+      <h1 class="text-center mb-5"><%= t("work") %></h1>
     </div>
     <div class="container content">
       <div class="row">
@@ -105,9 +105,9 @@
             <img class="img-fluid" src="/assets/component-7-1.svg" alt="">
           </div>
           <div>
-            <p class="title">5 FRIENDS</p>
+            <p class="title"><%= t("friend") %></p>
             <p class="subtitle">
-              Share with 5 people and you will get access to our platform before anyone else.
+              <%= t("five_text") %>
             </p>
           </div>
         </div>
@@ -116,9 +116,9 @@
             <img class="img-fluid" src="/assets/component-9-1.svg" alt="">
           </div>
           <div>
-            <p class="title">25 FRIENDS</p>
+            <p class="title"><%= t("friends_25") %></p>
             <p class="subtitle">
-              Share with 25 people and you will get first access to our platform before anyone else and first pick on volunteer opportunities.
+              <%= t("tfive_text") %>
             </p>
           </div>
         </div>
@@ -127,13 +127,13 @@
   </section>
   <section>
     <div class="volunteer">
-      <h1 class="text-center mb-0 volunteermatters"><strong>#volunteermatters</strong></h1>
-        <h2 class="text-center">Share, Help and Win</h2>
+      <h1 class="text-center mb-0 volunteermatters"><strong><%= t("volun") %></strong></h1>
+        <h2 class="text-center"><%= t("share_help") %></h2>
         <div class="container">
           <div class="share" style="background-color: #f2f2f2;">
             <p class="share-code" style="padding: 0px;">
               <a href="javascript: void(0);" class="btn btn-xl text-white ml-2" style="background-color: #fe4308; border-radius: 15px; padding: 10px 30px;" onclick="copy()">
-                Your code
+                <%= t("code") %>
               </a>
             </p>
           </div>
@@ -144,16 +144,16 @@
             words = ''
             referrals_count = @user.referrals.count
             if referrals_count == 1
-              words = 'friend has'
+              words = t("friend_has")
             elsif
-              words = 'friends have'
+              words = t("friends_have")
             end
           %>
           <div class="share">
             <% if referrals_count == 0 %>
-              <p class="share-code"><strong class="ml-2">No friends have joined...Yet!</strong></p>
+              <p class="share-code"><strong class="ml-2"><%= t("not_joined") %></strong></p>
             <% else %>
-              <p class="share-code"><strong class="ml-2"><%= referrals_count %> <%= words %> joined</strong></p>
+              <p class="share-code"><strong class="ml-2"><%= referrals_count %> <%= words %> <%= t("joined") %></strong></p>
             <% end %> 
           </div>
         </div        
@@ -165,9 +165,9 @@
   <footer class="py-5 bg-white">
     <div class="container">
       <p class="m-0 text-center">
-      <%= link_to "Terms of Service", privacy_policy_path, target: '_blank', style: "text-decoration: none; color: #222;" %>
+      <%= link_to t("terms"), privacy_policy_path, target: '_blank', style: "text-decoration: none; color: #222;" %>
        <br>
-        Copyrights © 2020 ShareNest LLC. All rights reserved</p>
+        <%= t("rights") %></p>
     </div>
     
     <!-- /.container -->
@@ -187,6 +187,6 @@ function copy() {
   el.select();
   document.execCommand('copy');
   document.body.removeChild(el);  
-  alert("Copied to clipboard: " + copyText.value);
+  alert(<%= t("copied_clip") %> + copyText.value);
 }  
 </script>

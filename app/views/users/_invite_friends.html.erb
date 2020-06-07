@@ -2,7 +2,7 @@
   <%# <img src="/assets/component-11-1.svg" alt="">  %>
       <% body = "Hi%21%0A%0AI%20Invite%20your%20friends%20to%20ShareNest%20-%20For%20each%20friend%2C%20you%20get%20exclusive%20experiences%20with%20unique%20people." %>
     <a href="mailto:?subject=Thank%20you%20for%20Raising%20your%20Hand!&body=<%= body %>"><img src="<%= asset_path('component-12-1.svg') %>" alt="Share on Gmail" /></a>  
-    <% twitter_message = "Invite your friends to ShareNest - For each friend you get exclusive experiences with unique people" %>  
-    <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=ShareNest - Volunteer Marketplace" target="_blank"><img src="<%= asset_path('social-03.svg') %>" alt="Share on Facebook" /></a> 
+    <% twitter_message = t("share_link_text") %>  
+    <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=<%= t('share_link_title') %>" target="_blank"><img src="<%= asset_path('social-03.svg') %>" alt="Share on Facebook" /></a> 
     <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" target="_blank"><img src="<%= asset_path('social-04.svg') %>" alt="Share on Twitter" /></a>
 </div>
