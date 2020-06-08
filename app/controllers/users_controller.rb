@@ -24,7 +24,7 @@ class UsersController < ApplicationController
     if @user.save
       @user.update_attributes(:referrer_id => @user.id) if ref_code.blank?
       cookies[:h_email] = { value: @user.email }
-      redirect_to user_path(@user.referral_code), notice: I18n.t("flash.flash_msg")
+      redirect_to user_path(id: @user.referral_code), notice: I18n.t("flash.flash_msg")
     else
       if email.blank?
         logger.info("Error saving user with email, email is empty")
