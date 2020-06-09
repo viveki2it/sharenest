@@ -12,7 +12,7 @@
         <h1 class="masthead-heading mb-0"><%= t("thank") %></h1>
         <p class="masthead-subheading mt-5"><%= t("invite") %></p>
         <p class="mt-3 text-center terms">
-        <%= link_to t("see_terms"), privacy_policy_path, target: '_blank', style: "color: white;" %></p>
+        <%= link_to t("see_terms"), terms_service_path, target: '_blank', style: "color: white;" %></p>
         <input class="input" id="share-link" type="hidden" value="<%= root_url %>?ref=<%= @user.referral_code %>" readonly>
         <a href="javascript: void(0);" class="btn bg-black text-white btn-xl mt-4 button-black" onclick="copy()">
           <%= t("share") %>
@@ -165,7 +165,8 @@
   <footer class="py-5 bg-white">
     <div class="container">
       <p class="m-0 text-center">
-      <%= link_to t("terms"), privacy_policy_path, target: '_blank', style: "text-decoration: none; color: #222;" %>
+      <%= link_to t("terms"), terms_service_path, target: '_blank', style: "text-decoration: none; color: #222;" %>
+      <%= link_to t("policy.link"), privacy_policy_path, target: '_blank', style: "text-decoration: none; color: #222;" %>
        <br>
         <%= t("rights") %></p>
     </div>

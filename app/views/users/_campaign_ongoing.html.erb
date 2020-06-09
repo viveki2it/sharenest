@@ -44,13 +44,13 @@
     <div class="container-fluid p-0 m-0 section-2">
       <div class="row align-items-center section-2-container">
         <div class="col-lg-6 p-0">
-          <img src="/assets/landing/how-it-works-1@2x.png" class="img-fluid">
+          <img src="/assets/landing/step1_en.png" class="img-fluid">
         </div>
         <div class="col-lg-6 right-column">
-          <img src="/assets/landing/hexagonal-number.svg" alt="">
+          <img src="/assets/landing/hexagonal-number.png" alt="">
           <h1 class="section-2-title"><%= t("profile") %></h1>
           <p class="section-2-copy">
-            <%= t("let_world") %>
+            <%= t("let_world").html_safe %>
           </p>
         </div>
       </div>
@@ -67,7 +67,7 @@
           </p>
       </div>
       <div class="col-lg-6 p-0">
-        <img src="/assets/email_profile2.png" class="img-fluid">
+        <img src="/assets/landing/step2_en.png" class="img-fluid">
       </div>
         </div>
     </div>
@@ -77,10 +77,10 @@
     <div class="container-fluid p-0 m-0 section-2">
       <div class="row align-items-center section-2-container">
         <div class="col-lg-6 p-0">
-          <img src="/assets/landing/how-it-works-3@2x.png" class="img-fluid">
+          <img src="/assets/landing/step3_en.png" class="img-fluid">
         </div>
         <div class="col-lg-6 right-column">
-          <img src="/assets/landing/hexagonal-number-3.svg" alt="">
+          <img src="/assets/landing/hexagonal-number-3.png" alt="">
           <h1 class="section-2-title"><%= t("accept").html_safe %></h1>
           <p class="section-2-copy">
             <%= t("identify") %>
@@ -234,7 +234,8 @@
   <footer class="py-5 bg-white">
     <div class="container">
       <p class="m-0 text-center">      
-        <%= link_to t("terms"), privacy_policy_path, target: '_blank', style: "text-decoration: none; color: #222;" %>  <br>
+        <%= link_to t("terms"), terms_service_path, target: '_blank', style: "text-decoration: none; color: #222;" %>
+        <%= link_to t("policy.link"), privacy_policy_path, target: '_blank', style: "text-decoration: none; color: #222;" %>  <br>
         <%= t("rights") %>
       </p>
     </div>

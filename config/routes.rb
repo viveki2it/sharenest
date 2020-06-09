@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
     post 'users/create' => 'users#create'
     get 'refer-a-friend' => 'users#refer'
+    get 'terms-service' => 'users#terms'
     get 'privacy-policy' => 'users#policy'
     
     resources :users, only: [:show]
