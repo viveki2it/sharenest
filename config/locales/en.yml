@@ -314,6 +314,8 @@ en:
     share_text1: "Share the link below with friends to help us build a better world:"
     referral_link: "To view how many referrals you have at any time, click in the link below:"
     refferals: "# OF REFERRALS RECEIVED"
+    twitter_msg: "Invite your friends to ShareNest - For each friend you get exclusive experiences with unique people."
+    subject: "Thank you for Raising your Hand!"
 
   errors:
     format: "%{attribute} %{message}"
