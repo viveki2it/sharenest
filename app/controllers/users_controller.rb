@@ -24,7 +24,7 @@ class UsersController < ApplicationController
     if @user.save
       @user.update_attributes(:referrer_id => @user.id) if ref_code.blank?
       cookies[:h_email] = { value: @user.email }
-      redirect_to user_path(id: @user.referral_code), notice: I18n.t("flash.flash_msg")
+      redirect_to user_path(id: @user.referral_code, locale: params[:locale]), notice: I18n.t("flash.flash_msg")
     else
       if email.blank?
         logger.info("Error saving user with email, email is empty")
@@ -35,7 +35,7 @@ class UsersController < ApplicationController
         flash[:error] = errors
         logger.info("Error saving user with email, #{email}")
       end
-      redirect_to root_path
+      redirect_to root_path(locale: params[:locale])
     end
   end
 
@@ -47,7 +47,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.nil?
-        format.html { redirect_to root_path, alert: I18n.t("flash.flash_msg3") }
+        format.html { redirect_to root_path(locale: params[:locale]), alert: I18n.t("flash.flash_msg3") }
       else
         format.html # refer.html.erb
       end
@@ -61,12 +61,12 @@ class UsersController < ApplicationController
   end
 
   def redirect
-    redirect_to root_path, status: 404
+    redirect_to root_path(locale: params[:locale]), status: 404
   end
   
   def show
     if @user.blank?
-      redirect_to root_path, alert: I18n.t("flash.flash_msg4")
+      redirect_to root_path(locale: params[:locale]), alert: I18n.t("flash.flash_msg4")
     else
       render "refer"
     end
@@ -105,7 +105,7 @@ class UsersController < ApplicationController
       logger.info('IP address has already appeared three times in our records.
                  Redirecting user back to landing page.')
       flash[:error] = I18n.t("flash.flash_msg5")
-      return redirect_to root_path
+      return redirect_to root_path(locale: params[:locale])
     else
       current_ip.count += 1
       current_ip.save

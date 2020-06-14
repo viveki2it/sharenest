@@ -1,7 +1,21 @@
-  <!-- Navigation -->
-  
+<!-- Navigation -->
 
   <header class="masthead text-center text-white">
+   <div class="masthead-content select-lang">
+      <div class="row">
+        <div class="col-lg-6">&nbsp;&nbsp;</div>
+        <div class="col-lg-6">
+          <button type="button" class="btn btn-danger dropdown-toggle float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <%= t 'language'%>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <%= link_to 'English', url_for(locale: :en), class: "dropdown-item" %>
+            <%= link_to 'Spanish', url_for(locale: :es), class: "dropdown-item" %>
+            <%= link_to 'Portueguese', url_for(locale: :pt), class: "dropdown-item" %>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="page">
       <div class="logo">
         <img src="/assets/color-logo-transparent@11x.png" max-width="106px" />    
@@ -19,7 +33,7 @@
                 <img src="/assets/component-6-1.svg" alt="" width="40px" class="mr-3"><%= t("see") %>
               </p>
             </a>
-            <%= form_for @user, url: { :action => "create" } do |f| %>
+            <%= form_for @user, url: { action: "create", locale: params[:locale] } do |f| %>
               <p><%= f.text_field :email, placeholder: t("your"), class: "email" %></p>
               <p><button class="btn-primary join" type='submit'><%= t("join_movement") %></button></p>
             <% end %>
@@ -234,8 +248,8 @@
   <footer class="py-5 bg-white">
     <div class="container">
       <p class="m-0 text-center">      
-        <%= link_to t("terms"), terms_service_path, target: '_blank', style: "text-decoration: none; color: #222;" %>
-        <%= link_to t("policy.link"), privacy_policy_path, target: '_blank', style: "text-decoration: none; color: #222;" %>  <br>
+        <%= link_to t("terms"), terms_service_path(locale: params[:locale]), target: '_blank', style: "text-decoration: none; color: #222;" %>
+        <%= link_to t("policy.link"), privacy_policy_path(locale: params[:locale]), target: '_blank', style: "text-decoration: none; color: #222;" %>  <br>
         <%= t("rights") %>
       </p>
     </div>

@@ -18,7 +18,7 @@ module Sharenest
     config.ended = ENV['CAMPAIGN_ENDED'].to_s == 'true'
 
     # Permitted locales available for the application
-    config.i18n.available_locales = [:en, :pt]
+    config.i18n.available_locales = [:en, :pt, :es]
     
     # Set default locale to something other than :en
     config.i18n.default_locale = :en

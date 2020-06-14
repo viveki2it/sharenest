@@ -37,7 +37,7 @@ class ApplicationController < ActionController::Base
 
     user_agent = request.env['HTTP_USER_AGENT']
     return unless user_agent && !user_agent.include?('facebookexternalhit/1.1')
-    redirect_to proc { url_for(params.permit(:ref).except(:ref)) }
+    redirect_to proc { url_for(params.permit(:ref).except(:ref), locale: params[:locale]) }
   end
   
   def flatten_errors errors
