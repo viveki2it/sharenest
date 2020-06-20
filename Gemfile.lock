@@ -196,7 +196,7 @@ GEM
       toml
     popper_js (1.16.0)
     public_suffix (4.0.4)
-    puma (3.12.4)
+    puma (3.12.6)
     rack (2.2.2)
     rack-protection (2.0.8.1)
       rack
@@ -345,7 +345,7 @@ DEPENDENCIES
   newrelic_rpm
   pg
   popper
-  puma (~> 3.11)
+  puma (~> 3.12)
   rails (~> 5.2.3)
   rails-i18n (~> 5.1)
   rest-client
