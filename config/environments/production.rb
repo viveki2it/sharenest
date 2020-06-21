@@ -1,3 +1,4 @@
+require 'rack/klaviyo'
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -110,4 +111,5 @@ Rails.application.configure do
   #   :domain         => ENV['MAILGUN_DOMAIN'],
   #   :authentication => :plain,
   # }  
+  config.middleware.use "Klaviyo::Client::Middleware", ENV['KLAVIYO_API_KEY']
 end

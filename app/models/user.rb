@@ -48,7 +48,11 @@ class User < ApplicationRecord
   end
 
   def send_welcome_email
+    klaviyo = Klaviyo::Client.new(ENV['KLAVIYO_API_KEY'])
     UserMailer.signup_email(self).deliver_later
+    klaviyo.track('Registered  new user',
+      email: self.email
+    )
   end
 
 end
