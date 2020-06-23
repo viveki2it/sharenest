@@ -320,5 +320,5 @@ en:
   errors:
     format: "%{attribute} %{message}"
     messages:
-      unique_email: "Name(coded) is already taken."
+      unique_email: "Email is already taken."
       valid_email: "is not a valid email. Please enter valid email"
