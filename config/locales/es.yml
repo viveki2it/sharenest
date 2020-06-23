@@ -30,7 +30,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 es:
-  sided: 'El Marketplace de <br/> "bilateral" <br/> para Voluntariado Online'
+  sided: 'El Marketplace <br/> "bilateral" <br/> para Voluntariado Online'
   connecting: "Conectando <strong> a quienes pueden ayudar</strong> <br> <strong> con quienes necesitan ayuda.</strong>"
   see: "Así funciona"
   vol: "#VolunteeringMatters"
