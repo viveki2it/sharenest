@@ -30,10 +30,10 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 es:
-  sided: 'El Marketplace de <br/> "2 lados" <br/> para Voluntariado Online'
+  sided: 'El Marketplace de <br/> "bilateral" <br/> para Voluntariado Online'
   connecting: "Conectando <strong> a quienes pueden ayudar</strong> <br> <strong> con quienes necesitan ayuda.</strong>"
   see: "Así funciona"
-  vol: "#VolunteeringMatters"
+  vol: "#SerVoluntarioMatters"
   what: "Qué es ShareNest?"
   join_movement: "Unete al movimiento"
   join_pre: "Únete a nuestro pre-lanzamiento!"
@@ -41,7 +41,7 @@ es:
   your: "Tu email"
   terms: "Términos de Servicio"
   see_terms: "*Ver términos"
-  sharenest: 'Sharenest es el primer marketplace "de 2 lados" para ser voluntario online del mundo'
+  sharenest: 'Sharenest es el primer marketplace "bilateral" para ser voluntario online del mundo'
   join_free: "Únete gratis ahora, sólo tienes que crear un perfil y esperar a los que te necesitan te contacten."
   here_works: "Así es como funciona"
   profile: "Crea un perfil"
