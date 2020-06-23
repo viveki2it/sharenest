@@ -194,5 +194,5 @@ a.play {
 	position: absolute;
 	top: 12px;
 	right: 5px;
-	z-index: 1;
+	z-index: 9999 !important;
 }

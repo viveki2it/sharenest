@@ -1,0 +1,14 @@
+<div class="select-lang">
+  <div class="row">
+    <div class="col-lg-12">
+      <button type="button" class="btn btn-danger dropdown-toggle float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <%= t 'language'%>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <%= link_to 'English', url_for(locale: :en), class: "dropdown-item" %>
+        <%= link_to 'Spanish', url_for(locale: :es), class: "dropdown-item" %>
+        <%= link_to 'Portuguese', url_for(locale: :pt), class: "dropdown-item" %>
+      </div>
+    </div>
+  </div>
+</div>

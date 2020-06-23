@@ -68,7 +68,7 @@ pt:
   invite_friend: "Convide amigos para mudar o mundo e ganhe benefícios"
   sending_email: "É tão quanto mandar um email com um link customizado para os seus amigos ou compartilhar na media social."
   thank: "Obrigado por se juntar ao movimento e levantar suas mãos para criar um mundo melhor!"
-  invite: "Invite your friends to ShareNest - for each friend, we have special gifts for you"
+  invite: "Convide seus amigos para o ShareNest - para cada amigo, temos presentes especiais para você"
   share: "Compartilhar Agora"
   learn: " Aprenda mais"
   u_get: "Você ganha o que Você compartilha"
@@ -320,5 +320,5 @@ pt:
   errors:
     format: "%{attribute} %{message}"
     messages:
-      unique_email: "O nome (codificado) já está sendo usado."
+      unique_email: "Enviar já está sendo usado."
       valid_email: "não é um email válido. Insira um email válido"

@@ -31,7 +31,7 @@
 
 es:
   sided: 'El Market place de"  <br> 2 lados <br> para Voluntariado Online'
-  connecting: "Conectando <strong> a quienes pueden ayudar</strong> with<br> <strong> con quienes necesitan ayuda.</strong>"
+  connecting: "Conectando <strong> a quienes pueden ayudar</strong> <br> <strong> con quienes necesitan ayuda.</strong>"
   see: "Así funciona"
   vol: "#VolunteeringMatters"
   what: "Qué es ShareNest?"
@@ -42,13 +42,13 @@ es:
   terms: "Términos de Servicio"
   see_terms: "*Ver términos"
   sharenest: 'Sharenest es el primer marketplace "de 2 lados" para ser voluntario online del mundo'
-  join_free: "Únete gratis ahora, you just have to create a profile and wait for those in need to reach out for your help."
+  join_free: "Únete gratis ahora, sólo tienes que crear un perfil y esperar a los que te necesitan te contacten."
   here_works: "Así es como funciona"
   profile: "Crea un perfil"
-  let_world: "¡Deja que el mundo sepa cuál es tu talento único y lo que te apasiona! Recuerda, tu perfil será el que las organizaciones usen para solicitar tus servicios, así que no seas tímido, ¡presume un poco!;"
+  let_world: "¡Deja que el mundo sepa cuál es tu talento único y lo que te apasiona! Recuerda, tu perfil será el que las organizaciones usen para solicitar tus servicios, así que no seas tímido, ¡presume un poco! &#x1F642;"
   wait: "Espera por oportunidades <br> de voluntariado"
-  profile_complete: "After you've completed your profile, simply wait for organizations around the world to give you a digital tap on the shoulder, and begin the conversation! You can expect an exciting variety of projects and organizations you'll be contacted by, with some amazing causes!"
-  accept: "Accept the <br> opportunity"
+  profile_complete: "Una vez que hayas completado tu perfil, ¡simplemente espera a que organizaciones de todo el mundo le den un toque digital en el hombro y comience la conversación! ¡Puedes esperar una variedad emocionante de proyectos y organizaciones con las que se comunicarán con usted, con algunas causas sorprendentes!"
+  accept: "Acepta la <br> oportunidad"
   identify: "Una vez que hayas identificado la organización y la causa que más te entusiasma, ¡simplemente haz clic para participar y comienza a tener un impacto!"
   volunter: "Trabajar como voluntario…"
   improve: "Mejora tu inteligencia emocional y te brinda más satisfacción"
@@ -68,10 +68,10 @@ es:
   invite_friend: "Invita a tus amigos a cambiar el mundo y obtener beneficios"
   sending_email: "Es tan fácil como enviar un correo electrónico rápido con tu enlace personalizado a algunos amigos o compartir en redes sociales."
   thank: "Gracias por unirte al movimiento y levantar las manos para crear un mundo mejor!"
-  invite: "Invita a tus amigos a ShareNest: para cada amigo, tenemos regalos especiales para ti"
+  invite: "Invita a tus amigos a ShareNest: por cada amigo, tenemos regalos especiales para ti"
   share: "Comparte ahora"
   learn: "Aprende más"
-  u_get: "obtienes lo que compartes"
+  u_get: "Obtienes lo que compartes"
   steps: "en 4 sencillos pasos"
   sign_up: "REGÍSTRATE EN SHARENEST"
   add_email: "Agrega tu correo electrónico al formulario (asegúrate de registrarte como voluntario en nuestra plataforma)"
@@ -91,7 +91,7 @@ es:
   tfive_text: "Comparte con 25 personas y obtendrás primer acceso a nuestra plataforma y podrás elegir primero las oportunidades de voluntariado."
   join: "Únete a una reunión privada de zoom con el fundador de ShareNest y un invitado MUY especial"
   volun: "#volunteermatters"
-  share_help: "Comparte, ayuda and gana"
+  share_help: "Comparte, ayuda y gana"
   code: "Tu código"
   not_joined: "Ningún amigo se ha unido ... ¡Aún!"
   rights: "Copyrights © 2020 ShareNest LLC. Todos los derechos reservados"
@@ -320,5 +320,5 @@ es:
   errors:
     format: "%{attribute} %{message}"
     messages:
-      unique_email: "El nombre (codificado) ya está en uso"
+      unique_email: "Enviarle ya está en uso"
       valid_email: "no es un correo electrónico válido. Ingrese un correo electrónico válido"    
