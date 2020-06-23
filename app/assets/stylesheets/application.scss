@@ -93,6 +93,12 @@
 	.footer_content > h3 {
 		font-size: 15px;
 	}	
+	.float-right.btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+	}
 }
 
 @media (max-width:474px) {
@@ -120,6 +126,12 @@
 	
 	.footer_content > h3 {
 		font-size: 15px;
+	}
+	.float-right.btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
 	}
 }
 
