@@ -278,15 +278,15 @@ pt:
     pulol3: "Observando suas preferências no momento em que você registra sua conta nos Aplicativos"
     pulol4: "Logando nas configurações da sua conta e atualizando suas preferências."
     pulol5: "Contatando-nos usando as informações de contato fornecidas abaixo"
-    policy_p49: "If you no longer wish to receive correspondence, emails, or other communications from third parties, you are responsible for contacting the third party directly."
-    policy_h39: "CALIFORNIA PRIVACY RIGHTS"
-    policy_p50: "California Civil Code Section 1798.83, also known as the “Shine The Light” law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact information provided below."
-    policy_p51: "If you are under 18 years of age, reside in California, and have a registered account with the Applications, you have the right to request removal of unwanted data that you publicly post on the Applications. To request removal of such data, please contact us using the contact information provided below, and include the email address associated with your account and a statement that you reside in California. We will make sure the data is not publicly displayed on the Applications, but please be aware that the data may not be completely or comprehensively removed from our systems."
-    policy_h40: "CONTACT US"
-    policy_p52: "If you have questions or comments about this Privacy Policy, please contact us at:"
+    policy_p49: "Se você não deseja mais receber correspondência, e-mails ou outras comunicações de terceiros, é responsável por entrar em contato diretamente com o terceiro."
+    policy_h39: "DIREITOS DE PRIVACIDADE DA CALIFÓRNIA"
+    policy_p50: 'A Seção 1798.83 do Código Civil da Califórnia, também conhecida como lei "Shine The Light", permite que nossos usuários residentes na Califórnia solicitem e obtenham de nós, uma vez por ano e gratuitamente, informações sobre categorias de informações pessoais (se houver). divulgados a terceiros para fins de marketing direto e os nomes e endereços de todos os terceiros com os quais compartilhamos informações pessoais no ano civil imediatamente anterior. Se você é um residente da Califórnia e gostaria de fazer uma solicitação, envie sua solicitação por escrito para nós, usando as informações de contato fornecidas abaixo.'
+    policy_p51: "Se você tem menos de 18 anos de idade, reside na Califórnia e tem uma conta registrada nos Aplicativos, você tem o direito de solicitar a remoção de dados indesejados publicados publicamente nos Aplicativos. Para solicitar a remoção desses dados, entre em contato conosco usando as informações de contato fornecidas abaixo e inclua o endereço de e-mail associado à sua conta e uma declaração de sua residência na Califórnia. Garantiremos que os dados não sejam exibidos publicamente nos Aplicativos, mas lembre-se de que os dados podem não ser completamente ou de forma abrangente removidos de nossos sistemas."
+    policy_h40: "CONTATE-NOS"
+    policy_p52: "Se você tiver perguntas ou comentários sobre esta Política de Privacidade, entre em contato conosco:"
     policy_p53: "ShareNest LLC"
     policy_p54: "2821 NE 163rd St"
-    policy_p55: "Miami, Florida 33160"
+    policy_p55: "Miami, Flórida 33160"
     policy_p56: "info@sharenest.com"
 
   flash:
