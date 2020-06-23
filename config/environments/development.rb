@@ -1,5 +1,3 @@
-require 'rack/klaviyo'
-
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -74,4 +72,3 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :letter_opener
   config.action_mailer.perform_deliveries = true
 end
-ENV['KLAVIYO_API_KEY'] = 'pk_53dffa3aaf999aed3073da1c1e300f5f05'
