@@ -297,8 +297,8 @@ en:
     flash_msg5: "Your IP address has reached the max entries. Your IP address has been blocked by the system."
 
   email:
-    header: "Thank you for joining the movement #Raiseyourhands"
-    header_2: "We need your help to spread the word about our movement and to create a better world" 
+    header: "We’re going live in just a few weeks"
+    header_2: "Join now and have your first pick of volunteer opportunities from some of the worlds most recognizable organizations!" 
     invite_frd: "INVITE YOUR FRIENDS"
     simple_steps: "How ShareNest works (3 simple steps)"
     email_step1: "1. Create a Profile (don't be shy. You can brag a bit) &#x1F642;"
