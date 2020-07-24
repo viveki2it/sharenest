@@ -42,6 +42,17 @@ en:
   terms: "Terms of Service"
   see_terms: "*See terms"
   sharenest: 'Sharenest is the world’s first "2-sided" marketplace for online volunteering'
+  who_we_are: 'Who we are'
+  who_we_are1: 'We are a social enterprise that matches capable volunteers with NGOs & social impact projects around the world.'
+  who_we_are2: 'We are a community of change-makers; a tribe of people who are eager to do good,  share kindness and love, and add value to society.'
+  who_we_are3: 'We are passionate, engaging, and collaborative individuals who are seeking to ignite the world’s true potential using technology and our unique talents to create meaningful & impactful actions among people and organizations.'
+  who_we_are4: 'Join us if you are a professional or student who is interested in changing the world by sharing your unique gifts to positively generate impact and better yourself.'
+  who_we_are5: '<strong>We seek</strong> to impact the world by increasing awareness around our philosophy that sharing and giving are contagious'
+  who_we_are6: '<strong>We ignite</strong> the world’s true potential by connecting those who can help with those need help with the use of the most advanced technology'
+  who_we_are7: '<strong>We know</strong> the more we share of what we have, the more we will receive'
+  how_it_works: 'How it works'
+  how_it_works1: "Sharenest is simple. We've curated volunteer requests from some of the largest and most recognized NGO's and social impact projects around the world. Requests such as needs for graphic design support; social media management; strategy consulting and more!"
+  how_it_works2: "Every day, volunteers the world over are joining Sharenest by creating their unique profiles. Every user's profile includes important details about themselves, and a detailed description of their unique skill sets (ie graphic designer; web developer; strategy consultant; etc). Users then have the opportunity to apply to volunteer requests which could benefit from their skills, or simply wait for an organization to reach out and request participation. As a two-sided marketplace, Sharenest is the cross section of technological inter-connectivity and altruism."
   join_free: "Join for free now, you just have to create a profile and wait for those in need to reach out for your help."
   here_works: "Here’s how it works"
   profile: "Create a profile"
@@ -318,6 +329,7 @@ en:
     refferals: "# OF REFERRALS RECEIVED"
     twitter_msg: "Invite your friends to ShareNest - For each friend you get exclusive experiences with unique people."
     subject: "Thank you for Raising your Hand!"
+    footer: "We are all about impact! Therefore, due to the current situation around the world, and even before our marketplace is launched, we are already matching volunteers with NGOs. If you are interested in starting to make a change now, please contact us:"
 
   errors:
     format: "%{attribute} %{message}"
