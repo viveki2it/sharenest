@@ -42,18 +42,30 @@ en:
   terms: "Terms of Service"
   see_terms: "*See terms"
   sharenest: 'Sharenest is the world’s first "2-sided" marketplace for online volunteering'
-  who_we_are: 'Who we are'
-  who_we_are1: 'We are a social enterprise that matches capable volunteers with NGOs & social impact projects around the world.'
-  who_we_are2: 'We are a community of change-makers; a tribe of people who are eager to do good,  share kindness and love, and add value to society.'
-  who_we_are3: 'We are passionate, engaging, and collaborative individuals who are seeking to ignite the world’s true potential using technology and our unique talents to create meaningful & impactful actions among people and organizations.'
-  who_we_are4: 'Join us if you are a professional or student who is interested in changing the world by sharing your unique gifts to positively generate impact and better yourself.'
-  who_we_are5: '<strong>We seek</strong> to impact the world by increasing awareness around our philosophy that sharing and giving are contagious'
-  who_we_are6: '<strong>We ignite</strong> the world’s true potential by connecting those who can help with those need help with the use of the most advanced technology'
-  who_we_are7: '<strong>We know</strong> the more we share of what we have, the more we will receive'
-  how_it_works: 'How it works'
-  how_it_works1: "Sharenest is simple. We've curated volunteer requests from some of the largest and most recognized NGO's and social impact projects around the world. Requests such as needs for graphic design support; social media management; strategy consulting and more!"
-  how_it_works2: "Every day, volunteers the world over are joining Sharenest by creating their unique profiles. Every user's profile includes important details about themselves, and a detailed description of their unique skill sets (ie graphic designer; web developer; strategy consultant; etc). Users then have the opportunity to apply to volunteer requests which could benefit from their skills, or simply wait for an organization to reach out and request participation. As a two-sided marketplace, Sharenest is the cross section of technological inter-connectivity and altruism."
-  join_free: "Join for free now, you just have to create a profile and wait for those in need to reach out for your help."
+  how_it_work: 'How it work'
+  volunteers: 'Volunteers'
+  step1: 'Step 1'
+  step1_p: '<span class="text-orange">Create your profile,</span> describe your talents, your volunteer preferences, and showcase your work.'      
+  step2: 'Step 2'
+  step2_p: '<span class="text-orange">Raise your hand</span> and:<br> <span class="text-orange">A. Wait for</span>    thousands of national and international projects and non-profit <span class="text-orange">organizations to reach out to you.</span>'
+  step2_p1: '<span class="text-orange">B. Search for</span> your favorite volunteer <span class="text-orange">activity</span> and with just 2 clicks sign up to it.'
+  step3: 'Step 3'
+  step3_p: '<span class="text-orange">Accept</span> the opportunity and <span class="text-orange">start making a difference.</span>'
+  social_ngo: 'Social Projects & NGOs'
+  social_step1_p: '<span class="text-orange">Create your profile,</span> describing your mission and your cause of impact'
+  social_step2_p: '<span class="text-orange">Get Volunteers</span> with 2 simple options:<br> <span class="text-orange">A.
+                    Choose the service</span> you need help with and with 2-clicks <span class="text-orange">reach
+                    out to</span> thousand of talent <span class="text-orange">volunteers</span> waiting to share.'
+  social_step2_p1: '<span class="text-orange">B. Post your request</span> and wait for volunteers to sign up to the task.'
+  social_step3_p: '<span class="text-orange">Manage</span> your volunteer activities and track your <span
+                    class="text-orange">impact</span> on your Dashboard.'
+  inf_footer: 'As a two-sided marketplace, Sharenest is the cross section of technological inter-connectivity and altruism.'                                    
+  who_are: 'Who we are'
+  who_are_p: 'We are a social enterprise that matches capable volunteers with NGOs & social impact projects around the world.'
+  volunteer: 'Volunteer'
+  non_profit: 'Non profits'
+  who_are_p1: 'We are a community of change-makers; a tribe of people who are eager to do good, share kindness and love, add value to society.'
+  who_are_p2: 'Join us if you are a professional or student who is interested in changing the world by sharing your unique gifts to positively generate impact and better yourself.'
   here_works: "Here’s how it works"
   profile: "Create a profile"
   let_world: "Let the world know what your unique talent is, and what you're passionate about! Remember, your profile will be what organizations use to inquire for your services, so don't be shy, brag a little! &#x1F642;"

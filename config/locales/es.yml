@@ -34,7 +34,7 @@ es:
   connecting: "Conectando <strong> a quienes pueden ayudar</strong> <br> <strong> con quienes necesitan ayuda.</strong>"
   see: "Así funciona"
   vol: "#VolunteeringMatters"
-  what: "Qué es ShareNest?"
+  what: "¿Qué es ShareNest?"
   join_movement: "Unete al movimiento"
   join_pre: "Únete a nuestro pre-lanzamiento!"
   path: "privacy_policy_path"
@@ -42,18 +42,27 @@ es:
   terms: "Términos de Servicio"
   see_terms: "*Ver términos"
   sharenest: 'Sharenest es el primer marketplace "bilateral" para ser voluntario online del mundo'
-  who_we_are: 'Quienes somos?'
-  who_we_are1: 'Somos una empresa social que une voluntarios capaces con ONGs y proyectos de impacto social en todo el mundo.'
-  who_we_are2: 'Somos una comunidad de creadores de cambio; una tribu de personas que están ansiosas por hacer el bien, compartir amabilidad y amor y agregar valor a la sociedad.'
-  who_we_are3: 'Somos personas apasionadas, atractivas y colaborativas que buscan encender el verdadero potencial del mundo utilizando la tecnología y nuestros talentos únicos para crear acciones significativas e impactantes entre las personas y las organizaciones.'
-  who_we_are4: 'Únase a nosotros si es un profesional o estudiante que está interesado en cambiar el mundo compartiendo sus dones únicos para generar un impacto positivo y mejorar usted mismo.'
-  who_we_are5: '<strong>Buscamos impactar</strong> al mundo al aumentar la conciencia sobre nuestra filosofía de que compartir y dar son contagiosos'
-  who_we_are6: '<strong>Encendemos el verdadero potencial</strong> del mundo conectando a aquellos que pueden ayudar con aquellos que necesitan ayuda con el uso de la tecnología más avanzada.'
-  who_we_are7: "<strong>Sabemos que</strong> cuanto más compartamos de lo que tenemos, más recibiremos"
-  how_it_works: "Cómo funciona?"
-  how_it_works1: "Sharenest es simple. Hemos seleccionado solicitudes de voluntarios de algunas de las ONG y proyectos de impacto social más grandes y reconocidos de todo el mundo. Solicitudes tales como necesidades de soporte de diseño gráfico; gestión de redes sociales; consultoría estratégica y más!"
-  how_it_works2: "Todos los días, voluntarios de todo el mundo se unen a Sharenest creando sus perfiles únicos. El perfil de cada usuario incluye detalles importantes sobre sí mismos y una descripción detallada de sus conjuntos de habilidades únicas (es decir, diseñador gráfico, desarrollador web, consultor de estrategia, etc.). Luego, los usuarios tienen la oportunidad de solicitar solicitudes de voluntariado que podrían beneficiarse de sus habilidades, o simplemente esperar a que una organización se comunique y solicite la participación. Como mercado de dos lados, Sharenest es la sección transversal de la interconectividad tecnológica y el altruismo."
-  join_free: "Únete gratis ahora, sólo tienes que crear un perfil y esperar a los que te necesitan te contacten."
+  how_it_work: "¿Cómo funciona?"
+  volunteers: 'Voluntarios'
+  step1: 'Paso 1'
+  step1_p: "<span class='text-orange'>Crea tu perfil,</span> describe tus talentos, tus preferencias de voluntariado y muestra tu trabajo."    
+  step2: 'Paso 2'
+  step2_p: "<span class='text-orange'>Levanta las manos</span> y:<br> <span class='text-orange'>A. Espera</span> a que miles de proyectos nacionales e internacionales y <span class='text-orange'>organizaciones</span> sin fines de lucro <span class='text-orange'>se comuniquen contigo</span>"
+  step2_p1: "<span class='text-orange'>B. Busca tu actividad</span> de voluntariado favorita y con solo 2 clics regístrate."
+  step3: 'Paso 3'
+  step3_p: "<span class='text-orange'>Acepta</span> la oportunidad y <span class='text-orange'>comienza a marcar la diferencia.</span>"
+  social_ngo: 'ONGs'
+  social_step1_p: "<span class='text-orange'>Crea tu perfil,</span> describe tu misión y tu causa de impacto."
+  social_step2_p: "<span class='text-orange'>Obtén voluntarios</span> con 2 simples opciones:<br> <span class='text-orange'>A. Elige el servicio</span> para el que necesitas ayuda y con 2 clics <span class='text-orange'>llega a</span> miles de talentosos <span class='text-orange'>voluntarios</span> que esperan compartir."
+  social_step2_p1: "<span class='text-orange'>B. Publica tu solicitud</span> y espera a que los voluntarios se inscriban en la tarea."
+  social_step3_p: "<span class='text-orange'>Administra tus actividades</span> de voluntariado y <span class='text-orange'>realiza un seguimiento</span> de su impacto en tu Tablero."
+  inf_footer: 'Como Marketplace "bilateral", Sharenest es la sección transversal de la interconectividad tecnológica y el altruismo.'                                 
+  who_are: "¿Quienes somos?"
+  who_are_p: "Somos una empresa social que une voluntarios capaces con ONGs y proyectos de impacto social en todo el mundo."
+  volunteer: "Voluntarios"
+  non_profit: "ONG's"
+  who_are_p1: "Somos una comunidad de creadores de cambio; una tribu de personas que están ansiosas por hacer el bien, compartir amabilidad y amor y agregar valor a la sociedad."
+  who_are_p2: "Únete a nosotros si eres un profesional o estudiante que está interesado en cambiar el mundo compartiendo sus dones únicos para generar un impacto positivo y mejorar."
   here_works: "Así es como funciona"
   profile: "Crea un perfil"
   let_world: "¡Deja que el mundo sepa cuál es tu talento único y lo que te apasiona! Recuerda, tu perfil será el que las organizaciones usen para solicitar tus servicios, así que no seas tímido, ¡presume un poco! &#x1F642;"
