@@ -1250,7 +1250,8 @@ footer .container_footer ul li a {
 }
 
 .infographic-how-we-work {
-  padding: 96px 0 67px 0;
+  /*padding: 96px 0 67px 0;*/
+  padding: 0 0 74px 0;
   text-align: center;
 }
 
@@ -1379,14 +1380,15 @@ footer .container_footer ul li a {
 }
 
 .infographic-who-we-are {
-  /* padding: 96px 0 74px 0; */
-  padding: 0 0 74px 0;
+   padding: 96px 0 67px 0; 
+  /*padding: 0 0 74px 0;*/
   text-align: center;
 }
 
 @media screen and (max-width: 768px) {
   .infographic-who-we-are {
-    padding: 0 10px 44px 20px;
+    /*padding: 0 10px 44px 20px;*/
+    padding: 50px 0 68px 0;
   }
 }
 
