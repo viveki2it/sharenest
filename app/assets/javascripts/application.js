@@ -17,3 +17,4 @@
 //= require activestorage
 //= require turbolinks
 //= require toastr
+//= require jquery.slick
