@@ -8,29 +8,17 @@
     <title>ShareNest &#8211; Volunteer Marketplace &#8211; ShareNest</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <link rel="alternate" hreflang="en" href="https://sharenest.com/sharenest-volunteer-marketplace/" />
+<!--     <link rel="alternate" hreflang="en" href="https://sharenest.com/sharenest-volunteer-marketplace/" />
     <link rel='dns-prefetch' href='//www.google.com' />
     <link rel='dns-prefetch' href='//s.w.org' />
     <link rel="alternate" type="application/rss+xml" title="ShareNest &raquo; Feed" href="https://sharenest.com/feed/" />
-    <link rel="alternate" type="application/rss+xml" title="ShareNest &raquo; Comments Feed" href="https://sharenest.com/comments/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="ShareNest &raquo; Comments Feed" href="https://sharenest.com/comments/feed/" /> -->
     <link rel="shortcut icon" href="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/profile_picture_symbol.png" type="image/x-icon" />
     <meta property="og:title" content="ShareNest - Volunteer Marketplace"/>
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="<%= Rails.application.config.action_mailer.default_url_options[:host] %>"/>
     <meta property="og:site_name" content="ShareNest"/>
-    <meta property="og:description" content="Introducing The
-    First Volunteer
-    Marketplace 
-
-    Connecting those who
-    want to help, with
-    those who need help  
-
-    Would you help us to
-    build this world? 
-
-    Sharing Your Services with the world Join us now 
-    Be the first to receive #VolunteeringMatters     The Sharenest Volunteering Hub Sharing Your Services with the world Start Measuring Your Social Impact"/>
+    <meta property="og:description" content="Introducing The First Volunteer Marketplace Connecting those who want to help, with those who need help Would you help us to build this world? Sharing Your Services with the world Join us now Be the first to receive #VolunteeringMatters The Sharenest Volunteering Hub Sharing Your Services with the world Start Measuring Your Social Impact"/>
 
     <meta property="og:image" content="<%= Rails.application.config.action_mailer.default_url_options[:host] %>/assets/logo.png"/>    
 
@@ -65,9 +53,9 @@
   <body class=<%= ['new', 'create'].include?(params[:action]) ? "landing" : "thankyoupage" %>>
     <%= yield %>
     <%= custom_bootstrap_flash %>
-    <script
+<!--     <script
     async type="text/javascript"
     src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=<%= ENV['KLAVIYO_PUBLIC_API_KEY'] %>"
-    ></script>
+    ></script> -->
   </body>
 </html>
